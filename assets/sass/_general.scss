@@ -15,22 +15,23 @@ body{
     width: 100vw;
     height: 100vh;
     overflow-x: auto;
-    padding: 100px 300px;
-    background: $primary-color;
+    padding: 50px 250px;
     &:nth-child(1){
-        background: #E6F8B2;
+        background: $ternary-color;
     }
     &:nth-child(2){
-        background: #3066BE;
+        background: #F1FEC6;
     }
     &:nth-child(3){
-        background: #B33951;
+        background: #F7A278;
+        
     }
     &:nth-child(4){
-        background: #4DAA57;
+        background: #A0E8AF;
     }
     &:nth-child(5){
-        background: #E3D081;
+        background: #9CAFB7;
+        
     }
 }
 
