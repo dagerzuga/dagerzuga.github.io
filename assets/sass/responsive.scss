@@ -1,0 +1,51 @@
+$breakpoints: (
+    small: 0,
+    medium: 640px,
+    large: 720px,
+    xlarge: 1024px,
+    xxlarge: 1200px,
+);
+
+
+@mixin change-on($bp){
+
+@if map-has-key($breakpoints, $bp){
+    @media screen and (max-width: map-get($breakpoints, $bp)) {
+        @content;
+    }  
+    }@else{
+        @media screen and (max-width: $bp){
+            @content;
+        }
+    }
+
+}
+//end of mixin
+
+@include change-on(large){
+
+    .menu-vertical{
+        display: none;
+    }
+
+    .section{
+        height: 100vh;
+    }
+
+    .subsection{
+        // overflow: auto;
+        padding: 100px 50px;
+    }
+}
+
+@media screen and (max-height: 570px){
+    .profile, .networks{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 720px){
+    .menu-horizontal{
+        display: none;
+    }
+}

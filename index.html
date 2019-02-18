@@ -7,9 +7,100 @@
     <title>dagerzuga</title>
     <link href="https://fonts.googleapis.com/css?family=Baloo" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
 </head>
 <body>
-   <h1>404</h1>
+    <div class="container">
+
+    <section class="menu-horizontal">
+
+        <div class="menu-horizontal__nav">
+            <h2 class="menu-horizontal__title">Dáger Zúñiga</h2>
+            <button class="hamburger" id="button-hamburger">
+                <span class="hamburger__line"></span>
+                <span class="hamburger__line"></span>
+                <span class="hamburger__line"></span>
+            </button>
+        </div>
+
+        <div class="menu-horizontal__list">
+            <ul class="list-horizontal" id="list-horizontal">
+                <li id="first-al1" class="list-horizontal__item list_item-active">About</li>
+                <li id="second-al2" class="list-horizontal__item">Education</li>
+                <li id="third-al3" class="list-horizontal__item">Skills</li>
+                <li id="fourth-al4" class="list-horizontal__item">Portfolio</li>
+                <li id="last-al5" class="list-horizontal__item">Contact</li>
+            </ul>
+        </div>
+        
+    </section>
+
+    <div class="menu-vertical">
+        <div class="profile">
+            <img class="profile_picture" src="./assets/images/dager.jpg" alt="Dáger Zúñiga" width="125px" height="125px">
+            <h2 class="profile_name">Dáger Zúñiga</h2>
+        </div>
+
+        <ul class="list" id="list">
+            <li class="list_item list_item-active" id="first-link">
+                <span class="list_icon fas fa-user"></span>
+                <span class="list_text">About me</span>
+            </li>
+
+            <li class="list_item" id="second-link">
+                <span class="list_icon fas fa-graduation-cap"></span>
+                <span class="list_text">Education</span>
+            </li>
+
+            <li class="list_item" id="third-link">
+                <span class="list_icon fas fa-pencil-ruler"></span>
+                <span class="list_text">Skills</span>
+            </li>
+
+            <li class="list_item" id="fourth-link">
+                <span class="list_icon fas fa-briefcase"></span>
+                <span class="list_text">Portfolio</span>
+            </li>
+
+            <li class="list_item" id="last-link">
+                <span class="list_icon fas fa-envelope"></span>
+                <span class="list_text">Contact</span>
+            </li>
+            
+        </ul>
+        
+        <ul class="networks">
+            <li>
+                <a href=""><span class="networks_icon fab fa-facebook-f"></span></a>
+            </li>
+
+            <li>
+                <a href=""><span class="networks_icon fab fa-instagram"></a></span>
+            </li>
+
+            <li>
+                <a href=""><span class="networks_icon fab fa-codepen"></a></span>
+            </li>
+
+            <li>
+                <a href=""><span class="networks_icon fab fa-github"></a></span>
+            </li>
+        </ul>
+    </div>
+
+    <section class="section">
+
+        <div class="subsection subsection-active" id="first-section">Dáger Zúñiga</div>
+        <div class="subsection" id="second-section">Education</div>
+        <div class="subsection" id="third-section">Skills</div>
+        <div class="subsection" id="fourth-section">Portfolio</div>
+        <div class="subsection" id="last-section">Contact</div>
+
+    </section>
+
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+    <script src="/assets/js/app.js"></script>
+
+</div>
 </body>
 </html>

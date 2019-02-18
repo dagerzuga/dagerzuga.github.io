@@ -1,0 +1,45 @@
+body{
+    font-family: 'Baloo', cursive;
+    overflow: hidden;
+}
+
+.section{
+    position: relative;
+    background: $secondary-color;
+}
+
+.subsection{
+    z-index: -1;
+    position: absolute;
+    right: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow-x: auto;
+    padding: 100px 300px;
+    background: $primary-color;
+    &:nth-child(1){
+        background: #E6F8B2;
+    }
+    &:nth-child(2){
+        background: #3066BE;
+    }
+    &:nth-child(3){
+        background: #B33951;
+    }
+    &:nth-child(4){
+        background: #4DAA57;
+    }
+    &:nth-child(5){
+        background: #E3D081;
+    }
+}
+
+.subsection-prev{
+    z-index: 0;
+}
+
+.subsection-active{
+    z-index: 9;
+    animation: subsection-entry 1s forwards linear;
+    transition: 1.5s;
+}
