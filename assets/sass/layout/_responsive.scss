@@ -24,7 +24,7 @@ $breakpoints: (
 
 @include change-on(large){
 
-    .menu-vertical{
+    .nav-vertical{
         display: none;
     }
 
@@ -45,7 +45,7 @@ $breakpoints: (
 }
 
 @media screen and (min-width: 720px){
-    .menu-horizontal{
+    .nav-horizontal{
         display: none;
     }
 }

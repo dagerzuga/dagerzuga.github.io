@@ -1,10 +1,22 @@
-@import 'resources';
-@import 'reset';
-@import 'navegation';
-@import 'general';
-@import 'first-section';
-@import 'second-section';
-@import 'third-section';
-@import 'fourth-section';
-@import 'last-section';
-@import 'responsive';
+// helpers
+@import './helpers/reset';
+@import './helpers/variables';
+@import './helpers/animations';
+
+// components
+@import './components/scrollbar';
+@import './components/btn-hamburger';
+@import './components/nav-horizontal';
+@import './components/nav-vertical';
+
+
+//sections - pages
+@import './sections/first-section';
+@import './sections/second-section';
+@import './sections/third-section';
+@import './sections/fourth-section';
+@import './sections/last-section';
+
+//layout
+@import './layout/grid';
+@import './layout/responsive';

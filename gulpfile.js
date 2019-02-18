@@ -7,7 +7,7 @@ gulp.task('default', () =>{
     browserSync.init({
         server: './'
     })
-    gulp.watch('./assets/sass/*.scss', gulp.series('sass'));
+    gulp.watch('./assets/sass/**/*.scss', gulp.series('sass'));
     gulp.watch(['./*.html', './assets/css/style.css', './assets/js/*.js']).on('change', browserSync.reload)
 
 });

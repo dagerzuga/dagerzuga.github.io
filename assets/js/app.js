@@ -1,8 +1,8 @@
 (function($) {      
 
     $("#button-hamburger").click(function() {
-        $("#button-hamburger").toggleClass('group')
-        $('.menu-horizontal__list').toggleClass('menu-horizontal__list--open')
+        $("#button-hamburger").toggleClass('hamburger--open')
+        $('.menu-horizontal').toggleClass('menu-horizontal--open')
     });
 
     $('#list-horizontal').click(function(event){
