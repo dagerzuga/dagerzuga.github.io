@@ -1,21 +1,18 @@
 // helpers
-@import './helpers/reset';
 @import './helpers/variables';
-@import './helpers/animations';
+@import './helpers/reset';
 
 // components
 @import './components/scrollbar';
-@import './components/btn-hamburger';
-@import './components/nav-horizontal';
-@import './components/nav-vertical';
+@import './components/btn-menu';
+@import './components/menu';
 
-
-//sections - pages
-@import './sections/first-section';
-@import './sections/second-section';
-@import './sections/third-section';
-@import './sections/fourth-section';
-@import './sections/last-section';
+//sections
+@import './sections/about';
+@import './sections/education';
+@import './sections/abilities';
+@import './sections/portfolio';
+@import './sections/contact';
 
 //layout
 @import './layout/grid';

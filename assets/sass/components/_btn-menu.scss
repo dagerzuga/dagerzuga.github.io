@@ -1,0 +1,25 @@
+.btn-menu{
+    z-index: 2;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 65px;
+    height: 50px;
+    color: $secondary-color;
+    background: $primary-color;
+    transition: 1s;
+    cursor: pointer;
+}
+
+.btn-menu__icon{
+    font-size: 56px;
+    transition: 1s;
+}
+
+.btn-menu--open{
+    transform: translateX(300%);
+    .btn-menu__icon{
+        transition: 1s;
+        transform: rotate(180deg);
+    }
+}

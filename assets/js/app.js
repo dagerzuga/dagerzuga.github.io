@@ -1,44 +1,32 @@
-(function($) {      
+(function($){
 
-    $("#button-hamburger").click(function() {
-        $("#button-hamburger").toggleClass('hamburger--open')
-        $('.menu-horizontal').toggleClass('menu-horizontal--open')
+    $('#btn-menu').click(function(){
+        toggleResponsiveMenu()
     });
-
-    $('#list-horizontal').click(function(event){
-        let prevId = $('.subsection-active').attr('id'),
-            target = $(event.target),
-            idToGo = (target).attr('id')
-
-            changePage(idToGo, prevId)
-    })
-
-    $('#list').click(function(event){
-
-        let prevId = $('.subsection-active').attr('id'),
-            target = $(event.target),
-            idToGo = (target).attr('id')
-
-        if(target.is("span")){
-            idToGo = (target).parent().attr('id')
-        }
-
-        changePage(idToGo, prevId)
-    })
-  
-    function changePage(idToGo, prevId){
-        $('#'+prevId).siblings().removeClass('subsection-prev')
-        $('#'+prevId).addClass('subsection-prev')
-        $('#'+idToGo).siblings().removeClass('list_item-active')
-        $('#'+idToGo).addClass('list_item-active')
-        indexOfUnderscore = idToGo.indexOf('-')
-        idToGo = idToGo.substring(0, indexOfUnderscore)
-        idToGo = idToGo+'-section'
-        $('#'+idToGo).siblings().removeClass('subsection-active')
-        if(!$('#'+idToGo).hasClass('subsection-active'))
-            $('#'+idToGo).addClass('subsection-active')
-    }
-
-
     
+    function toggleResponsiveMenu(){
+        $('.menu-vertival').toggleClass('menu-vertival--open')
+        $('#btn-menu').toggleClass('btn-menu--open')
+    }
+    
+    function closeResponsiveMenu(){
+        $('.menu-vertival').removeClass('menu-vertival--open')
+        $('#btn-menu').removeClass('btn-menu--open')
+    }
+    $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
+        if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+            if (target.length) {
+                $('html, body').animate({
+                    scrollTop: (target.offset().top)
+                }, 1000, "easeInOutExpo");
+                closeResponsiveMenu()
+                return false;
+            }
+        }
+    });
+    
+    $("#nav").scrollspy({ activeClass: 'menu-vertival__item--active'});
+
 })(jQuery);

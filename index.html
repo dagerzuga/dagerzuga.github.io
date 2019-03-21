@@ -4,107 +4,440 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>dagerzuga</title>
-    <link href="https://fonts.googleapis.com/css?family=Baloo" rel="stylesheet">
+    <title>@dagerzuga</title>
+    <link href="https://fonts.googleapis.com/css?family=Fredoka+One|Varela+Round" rel="stylesheet">
+    <link href='//cdn.jsdelivr.net/devicons/1.8.0/css/devicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
+
     <div class="container">
 
-    <section class="nav-horizontal">
-
-        <div class="header">
-            <h2 class="header__title">Dáger Zúñiga</h2>
-            <button class="hamburger" id="button-hamburger">
-                <span class="hamburger__line"></span>
-                <span class="hamburger__line"></span>
-                <span class="hamburger__line"></span>
-            </button>
-        </div>
-
-        <div class="menu-horizontal">
-            <ul class="menu-horizontal__list" id="list-horizontal">
-                <li id="first-al1" class="menu-horizontal__item list_item-active">About</li>
-                <li id="second-al2" class="menu-horizontal__item">Education</li>
-                <li id="third-al3" class="menu-horizontal__item">Skills</li>
-                <li id="fourth-al4" class="menu-horizontal__item">Portfolio</li>
-                <li id="last-al5" class="menu-horizontal__item">Contact</li>
+        <div class="menu-vertival" id="">
+            
+            <ul class="menu-vertival__list" id=nav>
+                <li class="menu-vertival__list__child"><a class="js-scroll-trigger menu-vertival__item" href="#about">About me</a></li>
+                <li class="menu-vertival__list__child"><a class="js-scroll-trigger menu-vertival__item" href="#education">Education</a></li>
+                <li class="menu-vertival__list__child"><a class="js-scroll-trigger menu-vertival__item"  href="#abilities">Abilities</a></li>
+                <li class="menu-vertival__list__child"><a class="js-scroll-trigger menu-vertival__item"  href="#portfolio">Portfolio</a></li>
+                <li class="menu-vertival__list__child"><a class="js-scroll-trigger menu-vertival__item"  href="#contact">Contact</a></li>
             </ul>
         </div>
         
-    </section>
+        <div class="btn-menu" id=btn-menu>
+            <span class="btn-menu__icon fas fa-angle-right"></span>
+        </div>
+        
+        <div class="content" id="content">
 
-    <div class="nav-vertical">
-        <div class="profile">
-            <img class="profile_picture" src="./assets/images/dager.jpg" alt="Dáger Zúñiga" width="125px" height="125px">
-            <h2 class="profile_name">Dáger Zúñiga</h2>
+            <section class="about" id="about">
+
+                <div class="about__box">
+                               
+                    <div class="about-colum">
+                        <div class="profile-data">
+                            <img class="profile-data__picture" src="./assets/images/dager.jpg" alt="Dáger Zúñiga">
+                        <div class="networks">
+                                <ul class="networks__list">
+            
+                                    <li class="networks__list__item">
+                                        <a class="networks__link" href="https://facebook.com/dagerzuga" target="_blank">
+                                            <span class="networks__icon fab fa-facebook-f"></span>
+                                        </a>
+                                    </li>
+            
+                                    <li class="networks__list__item">
+                                            <a class="networks__link" href="https://instagram.com/dagerzuga" target="_blank">
+                                                <span class="networks__icon fab fa-instagram"></span>
+                                            </a>
+                                    </li>
+            
+                                    <li class="networks__list__item">
+                                        <a class="networks__link" href="https://stackoverflow.com/story/dagerzuga" target="_blank">
+                                            <span class="networks__icon fab fa-stack-overflow"></span>
+                                        </a>
+                                    </li>
+            
+                                    <li class="networks__list__item">
+                                        <a class="networks__link" href="https://codepen.io/dagerzuga/" target="_blank">
+                                            <span class="networks__icon fab fa-codepen"></span>
+                                        </a>
+                                    </li>
+            
+                                    <li class="networks__list__item">
+                                        <a class="networks__link" href="https://github.com/dagerzuga" target="_blank">
+                                            <span class="networks__icon fab fa-github"></span>
+                                        </a>
+                                    </li>
+                                    
+                                </ul>
+                        </div>
+                        </div>
+                    </div>
+
+                    <div class="about-colum">
+                        <div class="about__header">
+                            <h1 class="about__title">Hi, I'm <span class="about__name">Dáger Zúñiga</span></h1>
+                            <h2 class="about__subtitle">Developer</h2>
+                        </div>
+        
+                        <div class="about__description">
+                            <p class="regular-text">
+                                I'm a fullstack developer passionate about learning web trends & new technologies,
+                                a very self-taught person, which is a must-have skill to grow in the tech environment.
+                                A friendly person to work with.
+                            </p>
+                        </div>
+
+                        <div class="download-cv">
+                            <a class="download-cv--container" href="https://www.dropbox.com/s/y8n52p9t91rl8ef/Scrum-Institute.org-SMAC02e8d61952-79819420135580.pdf?dl=0" target="_blank">
+                                <span class="download-cv--text">Download C.V</span>
+                                <span class="download-cv--icon fas fa-arrow-down"></span>
+                            </a>
+                        </div>
+
+                        <div class="networks">
+                            <ul class="networks__list networks--mobile">
+        
+                                <li class="networks__list__item">
+                                    <a class="networks__link" href="https://facebook.com/dagerzuga" target="_blank">
+                                        <span class="networks__icon fab fa-facebook-f"></span>
+                                    </a>
+                                </li>
+        
+                                <li class="networks__list__item">
+                                        <a class="networks__link" href="https://instagram.com/dagerzuga" target="_blank">
+                                            <span class="networks__icon fab fa-instagram"></span>
+                                        </a>
+                                </li>
+        
+                                <li class="networks__list__item">
+                                    <a class="networks__link" href="https://stackoverflow.com/story/dagerzuga" target="_blank">
+                                        <span class="networks__icon fab fa-stack-overflow"></span>
+                                    </a>
+                                </li>
+        
+                                <li class="networks__list__item">
+                                    <a class="networks__link" href="https://codepen.io/dagerzuga/" target="_blank">
+                                        <span class="networks__icon fab fa-codepen"></span>
+                                    </a>
+                                </li>
+        
+                                <li class="networks__list__item">
+                                    <a class="networks__link" href="https://github.com/dagerzuga" target="_blank">
+                                        <span class="networks__icon fab fa-github"></span>
+                                    </a>
+                                </li>
+                                
+                            </ul>
+                    </div>
+        
+                        
+                    </div>
+
+                </div>
+
+            </section>
+
+            <section class="section education" id="education">
+
+                <div class="section__header">
+                    <h1 class="section__title">EDUCATION</h1>
+                    <p class="regular-text">
+                            Formal education is not enough, that's why learning 
+                            by our own makes us stand out in our daily work.
+                    </p>
+                </div>
+                
+                <div class="section__content">
+                <div class="education__content">
+                    <ul class="timeline">
+
+                        <li class="timeline__item">
+                            <span class="timeline__date">april <span class="timeline__year">2020</span></span>
+                            <a class="timeline__link" href="#">
+                                <span class="timeline__title">Informática y Tecnología Multimedia</span>
+                                <span class="timeline__place">Universidad de Costa Rica</span>
+                            </a>
+                        </li>
+
+                        <li class="timeline__item">
+                            <span class="timeline__date">may <span class="timeline__year">2019</span></span>
+                            <a class="timeline__link" href="#">
+                                <span class="timeline__title">Programador backend javascript</span>
+                                <span class="timeline__place">EDteam</span>
+                            </a>
+                        </li>
+
+                        <li class="timeline__item">
+                            <span class="timeline__date">April <span class="timeline__year">2019</span></span>
+                            <a class="timeline__link" href="#">
+                                <span class="timeline__title">Programador backend PHP</span>
+                                <span class="timeline__place">EDteam</span>
+                            </a>
+                        </li>
+
+                        <li class="timeline__item">
+                            <span class="timeline__date">March <span class="timeline__year">2019</span></span>
+                            <a class="timeline__link" href="#">
+                                <span class="timeline__title">Desarrollo de temas para wordpress</span>
+                                <span class="timeline__place">EDteam</span>
+                            </a>
+                        </li>
+
+                        <li class="timeline__item">
+                            <span class="timeline__date">March <span class="timeline__year">2019</span></span>
+                            <a class="timeline__link" href="#">
+                                <span class="timeline__title">Desarrollo web</span>
+                                <span class="timeline__place">Udemy</span>
+                            </a>
+                        </li>
+
+                        <li class="timeline__item">
+                            <span class="timeline__date">october <span class="timeline__year">2018</span></span>
+                            <a class="timeline__link" href="https://www.dropbox.com/s/y8n52p9t91rl8ef/Scrum-Institute.org-SMAC02e8d61952-79819420135580.pdf?dl=0" target="_blank">
+                                <span class="timeline__title">SCRUM Master acredited certification</span>
+                                <span class="timeline__place">SCRUM Institute</span>
+                            </a>
+                        </li>
+
+
+                    </ul>
+                </div>
+
+            </section>
+
+            <section class="section abilities" id="abilities">
+                <div class="abilities__header">
+                    <h1 class="section__title">Abilities</h1>
+                    <p class="regular-text">
+                            As a modern full stack developer I not only use pure 
+                            technologies but also popular frameworks and tools. 
+                            As a friendly co-worker you can expect the best from me.
+                    </p>
+                </div>
+
+                <div class="section__content">
+                    <div class="abilities-row abilities__tech">
+                        <h2 class="abilities__title">Tech skills</h2>
+
+                        <ul class="abilities__list list--tech">
+                            <li class="abilities__item"><span class="abilities__icon abilities__icon__tech devicons devicons-html5"></span></li>
+                            <li class="abilities__item"><span class="abilities__icon abilities__icon__tech  devicons devicons-css3"></span></li>
+                            <li class="abilities__item"><span class="abilities__icon abilities__icon__tech  devicons devicons-javascript"></span></li>
+                            <li class="abilities__item"><span class="abilities__icon abilities__icon__tech  devicons devicons-sass"></span></li>
+                            <li class="abilities__item"><span class="abilities__icon abilities__icon__tech  devicons devicons-bootstrap"></span></li>
+                            <li class="abilities__item"><span class="abilities__icon abilities__icon__tech  fab fa-vuejs"></span></li>
+                            <li class="abilities__item"><span class="abilities__icon abilities__icon__tech  devicons devicons-wordpress"></span></li>
+                        </ul>
+
+                        <ul class="abilities__list list--tech">
+                            <li class="abilities__item"><span class="abilities__icon abilities__icon__tech  devicons devicons-nodejs_small"></span></li>
+                            <li class="abilities__item"><span class="abilities__icon abilities__icon__tech  devicons devicons-npm"></span></li>
+                            <li class="abilities__item"><span class="abilities__icon abilities__icon__tech  devicons devicons-gulp"></span></li>
+                            <li class="abilities__item"><span class="abilities__icon abilities__icon__tech  devicons devicons-php"></span></li>
+                            <li class="abilities__item"><span class="abilities__icon abilities__icon__tech  devicons devicons-laravel"></span></li>
+                            <li class="abilities__item"><span class="abilities__icon abilities__icon__tech  devicons devicons-firebase"></span></li>
+                            <li class="abilities__item"><span class="abilities__icon abilities__icon__tech  devicons devicons-mongodb"></span></li>
+                        </ul>
+
+                    </div>
+
+                    <div class="abilities-row abilities__soft">
+                        <h2 class="abilities__title">Soft skills</h2>
+
+                        <ul class="abilities__list list--soft">
+                                
+                                <li class="abilities__item abilities__item--soft">
+                                    <i class="abilities__icon abilities__icon--soft fas fa-handshake"></i>
+                                    <span class="abilities__text">negotiation</span>
+                                </li>
+
+
+                                <li class="abilities__item abilities__item--soft">
+                                    <i class="abilities__icon abilities__icon--soft fas fa-users"></i>
+                                    <span class="abilities__text">leadership</span>
+                                </li>
+
+                                <li class="abilities__item abilities__item--soft">
+                                    <i class="abilities__icon abilities__icon--soft fas fa-people-carry"></i>
+                                    <span class="abilities__text">team work</span>
+                                </li>
+
+                                <li class="abilities__item abilities__item--soft">
+                                    <i class="abilities__icon abilities__icon--soft fas fa-pencil-ruler"></i>
+                                    <span class="abilities__text">planning</span>
+                                </li>
+
+                                <li class="abilities__item abilities__item--soft">
+                                    <i class="abilities__icon abilities__icon--soft fas fa-clock"></i>
+                                    <span class="abilities__text">discipline</span>
+                                </li>
+
+                            </ul>
+                    </div>
+                </div>
+
+            </section>
+
+            <section class="section portfolio" id="portfolio">
+                <h1 class="section__title">Portfolio</h1>
+                <p class="regular-text">
+                    Here you have some projects I've done. Variety shows flexibility & creativity
+                </p>
+
+                <div class="portfolio__content">
+                    <div class="card">
+                        <a href="#" target="_blank">
+                            <img src="https://via.placeholder.com/250" alt="" class="card__img">
+                        </a>
+                        <h3 class="card__title">Project title</h3>
+                    </div>
+
+                    <div class="card">
+                        <a href="#" target="_blank">
+                            <img src="https://via.placeholder.com/250" alt="" class="card__img">
+                        </a>
+                        <h3 class="card__title">Project title</h3>
+                    </div>
+
+                    <div class="card">
+                        <a href="#" target="_blank">
+                            <img src="https://via.placeholder.com/250" alt="" class="card__img">
+                        </a>
+                        <h3 class="card__title">Project title</h3>
+                    </div>
+
+                    <div class="card">
+                        <a href="#" target="_blank">
+                            <img src="https://via.placeholder.com/250" alt="" class="card__img">
+                        </a>
+                        <h3 class="card__title">Project title</h3>
+                    </div>
+                    <div class="card">
+                        <a href="#" target="_blank">
+                            <img src="https://via.placeholder.com/250" alt="" class="card__img">
+                        </a>
+                        <h3 class="card__title">Project title</h3>
+                    </div>
+
+                    <div class="card">
+                        <a href="#" target="_blank">
+                            <img src="https://via.placeholder.com/250" alt="" class="card__img">
+                        </a>
+                        <h3 class="card__title">Project title</h3>
+                    </div>
+
+            
+                </div>
+<!-- 
+                <div class="portfolio__content">
+                    <div class="card">
+                        <a href="#" target="_blank">
+                            <img src="https://via.placeholder.com/250" alt="" class="card__img">
+                        </a>
+                        <h3 class="card__title">One page portfolio</h3>
+                    </div>
+                    
+                    <div class="card">
+                        <a href="#" target="_blank">
+                            <img src="https://via.placeholder.com/250" alt="" class="card__img">
+                        </a>
+                        <h3 class="card__title">One page portfolio</h3>
+                    </div>
+                    <div class="card">
+                        <a href="#" target="_blank">
+                            <img src="https://via.placeholder.com/250" alt="" class="card__img">
+                        </a>
+                        <h3 class="card__title">Project title</h3>
+                    </div>
+                    <div class="card">
+                        <a href="#" target="_blank">
+                            <img src="https://via.placeholder.com/250" alt="" class="card__img">
+                        </a>
+                        <h3 class="card__title">Project title</h3>
+                    </div>
+
+            
+                </div> -->
+
+            </section>
+            
+            <section class="section" id="contact">
+                <h1 class="section__title">Contact</h1>
+                <p class="regular-text">
+                    You can find me on different spaces. I'll answer asap.
+                </p>
+
+                <div class="social__main">
+
+                    <a class="main-icon" href="#" target="_blank">
+                        <span class="main-icon--icon fas fa-envelope"></span>
+                        <span class="main-icon--text">Send me a mail</span>
+                    </a>
+                    
+                    <a class="main-icon" href="#" target="_blank">
+                        <span class="main-icon--icon fab fa-telegram-plane"></span>
+                        <span class="main-icon--text">Send me a telegram</span>
+                    </a>
+
+                    
+                </div>
+
+                <div class="social__second">
+                    <p class="regular-text">
+                        Check out my social media
+                    </p>
+                    
+                    <div class="networks networks__contact">
+                            <ul class="networks__list--contact">
+        
+                                <li class="networks__list__item">
+                                    <a class="networks__link" href="https://facebook.com/dagerzuga" target="_blank">
+                                        <span class="networks__icon fab fa-facebook-f"></span>
+                                    </a>
+                                </li>
+        
+                                <li class="networks__list__item">
+                                        <a class="networks__link" href="https://instagram.com/dagerzuga" target="_blank">
+                                            <span class="networks__icon fab fa-instagram"></span>
+                                        </a>
+                                </li>
+        
+                                <li class="networks__list__item">
+                                    <a class="networks__link" href="https://stackoverflow.com/story/dagerzuga" target="_blank">
+                                        <span class="networks__icon fab fa-stack-overflow"></span>
+                                    </a>
+                                </li>
+        
+                                <li class="networks__list__item">
+                                    <a class="networks__link" href="https://codepen.io/dagerzuga/" target="_blank">
+                                        <span class="networks__icon fab fa-codepen"></span>
+                                    </a>
+                                </li>
+        
+                                <li class="networks__list__item">
+                                    <a class="networks__link" href="https://github.com/dagerzuga" target="_blank">
+                                        <span class="networks__icon fab fa-github"></span>
+                                    </a>
+                                </li>
+                                
+                            </ul>
+                    </div>
+
+                </div>
+                
+            </section>
+
         </div>
 
-        <ul class="menu-vertical" id="list">
-            <li class="list_item list_item-active" id="first-link">
-                <span class="list_icon fas fa-user"></span>
-                <span class="list_text">About me</span>
-            </li>
-
-            <li class="list_item" id="second-link">
-                <span class="list_icon fas fa-graduation-cap"></span>
-                <span class="list_text">Education</span>
-            </li>
-
-            <li class="list_item" id="third-link">
-                <span class="list_icon fas fa-pencil-ruler"></span>
-                <span class="list_text">Skills</span>
-            </li>
-
-            <li class="list_item" id="fourth-link">
-                <span class="list_icon fas fa-briefcase"></span>
-                <span class="list_text">Portfolio</span>
-            </li>
-
-            <li class="list_item" id="last-link">
-                <span class="list_icon fas fa-envelope"></span>
-                <span class="list_text">Contact</span>
-            </li>
-            
-        </ul>
-        
-        <ul class="networks">
-            <li>
-                <a href=""><span class="networks_icon fab fa-facebook-f"></span></a>
-            </li>
-
-            <li>
-                <a href=""><span class="networks_icon fab fa-instagram"></a></span>
-            </li>
-
-            <li>
-                <a href=""><span class="networks_icon fab fa-codepen"></a></span>
-            </li>
-
-            <li>
-                <a href=""><span class="networks_icon fab fa-github"></a></span>
-            </li>
-        </ul>
     </div>
 
-    <section class="section">
+    <script src="./vendors/jquery.min.js"></script>
+    <script src="./vendors/jquery.easing.min.js"></script>
+    <script src="./vendors/scrollspy.min.js"></script>
+    <script src="./assets/js/app.js"></script>    
 
-        <div class="subsection first-section subsection-active" id="first-section">
-            <h1 class="section-title">Dáger <span class="title__last-name">Zúñiga</span></h1>
-        </div>
-        <div class="subsection second-section" id="second-section">
-            <h1 class="title">Education</h1>
-        </div>
-        <div class="subsection third-section" id="third-section">Skills</div>
-        <div class="subsection fourth-section" id="fourth-section">Portfolio</div>
-        <div class="subsection last-section" id="last-section">Contact</div>
-
-    </section>
-
-    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
-    <script src="/assets/js/app.js"></script>
-
-</div>
 </body>
 </html>

@@ -1,0 +1,47 @@
+.education__content{
+    display: flex;
+    align-items: center;
+    margin-top: 45px;
+}
+
+.timeline__item{
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+
+.timeline__date{
+    font-size: 16px;
+    text-align: center;
+    width: 135px;
+    min-width: 135px;
+    padding: 5px 15px;
+    margin-right: 35px;
+    border: solid 2.5px $primary-color;
+    color: $ternary-color;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+
+.timeline__year{
+    display: block;
+}
+
+.timeline__link{
+    color: $ternary-color;
+    text-decoration: none;
+    &:hover{
+        color: $primary-color;
+    }
+}
+
+.timeline__title{
+    display: block;
+}
+
+.timeline__place{
+    display: block;
+    color: $ternary-color-light;
+}
