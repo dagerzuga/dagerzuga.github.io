@@ -73,10 +73,6 @@ $breakpoints: (
         width: 100%!important;
     }
 
-    .networks__list--contact{
-        // width: 85vw!important;
-    }
-
     .networks__contact{
     
         .networks__icon{
@@ -95,7 +91,23 @@ $breakpoints: (
         font-size: 16px;
     }
 
+    .portfolio__row{
+        // background: blue;
+    }
 
+    
+}
+
+@include change-on(610px){
+    
+    .portfolio__row{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card{
+        width: 350px!important;
+    }
 }
 
 @include change-on(large){
@@ -139,22 +151,12 @@ $breakpoints: (
         font-size: 18px;
     }
 
-    .portfolio__content{
-        flex-wrap: wrap;
-        justify-content: center;
+    .portfolio__row{
+        padding: 40px 0;
     }
-
+    
     .card{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin: 10px;
-        width: 45%;
-    }
-
-    .card__img{
-        width: 100%;
+        width: 250px;
     }
 
 }
