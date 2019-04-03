@@ -1,22 +1,23 @@
 .education__content{
-    display: flex;
-    align-items: center;
+    // display: flex;
+    // align-items: center;
     margin-top: 45px;
+    // background: #000;
 }
 
 .timeline__item{
     font-size: 20px;
     display: flex;
     align-items: center;
-    margin-bottom: 25px;
+    margin-bottom: 30px;
 }
 
 
 .timeline__date{
     font-size: 16px;
     text-align: center;
-    width: 135px;
-    min-width: 135px;
+    width: 155px;
+    min-width: 155px;
     padding: 5px 15px;
     margin-right: 35px;
     border: solid 2.5px $primary-color;
