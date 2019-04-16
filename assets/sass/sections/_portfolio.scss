@@ -16,8 +16,11 @@ $card-radius:         5px;
     display: flex;
     .no-flexbox & { float: left; }
     width: 100%;
+    justify-content: center;
     margin-top: 0;
     padding: 0 1em 2em;
+
+    // background: #000;
 
     // > 640px, 2 items/row
     @media screen and (min-width: 42em) and ( max-width: 60em ) {
@@ -33,6 +36,7 @@ $card-radius:         5px;
 }
 
 .card {
+    flex: 1 1 100%;
     display: flex;
     flex-direction: column;
     background-color: $card-background;
@@ -47,15 +51,6 @@ $card-radius:         5px;
         border-top-left-radius: ( $card-radius - $card-border-width );
         border-top-right-radius: ( $card-radius - $card-border-width );
     }
-}
-
-.card_image_tasky{
-    background-image: url('/assets/images/tasky.png');
-    background-position: center center;
-    background-size: cover;
-    height: 200px;
-    border-top-right-radius: 5px; 
-    border-top-left-radius: 5px; 
 }
 
 .card_content {
@@ -94,10 +89,10 @@ $card-radius:         5px;
     margin-bottom: 10px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
     span{
-        font-size: 40px;
-        margin: 0;
+        font-size: 44px;
+        width: 35px;
     }
     .fab{
         font-size: 34px;
