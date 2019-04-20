@@ -17,7 +17,8 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    max-width: 750px;
+    // background: #000;
+    max-width: 780px;
 }
 
 .abilities__item--soft{
@@ -32,7 +33,7 @@
 }
 
 .abilities__icon__tech{
-    font-size: 54px;
+    font-size: 58px;
 }
 
 .abilities__icon{
@@ -61,4 +62,13 @@
 .abilities__text{
     color:  $ternary-color-light;
     font-size: 16px;
+}
+
+
+// .abilities-row{
+//     background: #000;
+// }
+
+.abilities__soft{
+    margin-top: 25px;
 }
