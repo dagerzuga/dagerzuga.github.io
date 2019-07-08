@@ -1,0 +1,48 @@
+$breakpoints: (
+    small: 0,
+    medium: 420px,
+    large: 770px,
+    xlarge: 1100px,
+);
+
+
+@mixin change-on($bp){
+
+@if map-has-key($breakpoints, $bp){
+    @media screen and (max-width: map-get($breakpoints, $bp)) {
+        @content;
+    }  
+    }@else{
+        @media screen and (max-width: $bp){
+            @content;
+        }
+    }
+
+}
+//end of mixin
+
+
+@include change-on(xlarge){
+    .container{
+        width: 83vw;
+    }
+}
+
+@include change-on(large){
+    .container{
+        width: 100vw;
+        height: 100vh;
+        border-radius: 0;
+    }
+
+    .section{
+        height: 100vh;
+    }
+
+}
+
+@include change-on(580px){
+    .cards_item {
+        width: 100%;
+    }
+}

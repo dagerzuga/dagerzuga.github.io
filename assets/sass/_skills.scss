@@ -1,0 +1,19 @@
+.skills{
+    display: flex;
+    justify-content: center;
+}
+.skills_list{
+    display: flex;
+    margin-bottom: 15px;
+    margin-top: 10px;
+}
+
+.skill__icon{
+    font-size: 70px;
+    color: $ternary-color;
+    margin-right: 10px;
+    margin-left: 10px;
+    &:hover{
+        color: $primary-color;
+    }
+}

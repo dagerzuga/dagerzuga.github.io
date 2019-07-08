@@ -1,0 +1,23 @@
+*, *::before, *::after{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    overflow: hidden;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+ul{
+    list-style-type: none;
+}
+
+img{
+    max-width: 100%;
+    max-height: 100%;
+}

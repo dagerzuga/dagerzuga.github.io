@@ -1,0 +1,33 @@
+.contact-elements{
+    width: 100%;
+    max-width: 600px;
+    height: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contact-element{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    color: $ternary-color;
+    border-radius: 5px;
+    &:hover{
+        background: $ternary-color;
+        color: $secondary-color;
+    }
+}
+
+.contact-element__icon{
+    font-size: 125px;
+}
+
+.contact-element__text{
+    font-size: 20px;
+    font-family: $secondary-font;
+}

@@ -1,20 +1,11 @@
 // helpers
-@import './helpers/variables';
-@import './helpers/reset';
-@import './helpers/signature';
-
-// components
-@import './components/scrollbar';
-@import './components/btn-menu';
-@import './components/menu';
-
-//sections
-@import './sections/about';
-@import './sections/education';
-@import './sections/abilities';
-@import './sections/portfolio';
-@import './sections/contact';
-
-//layout
-@import './layout/grid';
-@import './layout/responsive';
+@import './reset';
+@import './variables';
+@import './mixins';
+@import './layout';
+@import './sections';
+@import './skills';
+@import './contact';
+@import './projects';
+@import './responsive';
+@import './scrollbar';

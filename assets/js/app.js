@@ -13,20 +13,24 @@
         $('.menu-vertival').removeClass('menu-vertival--open')
         $('#btn-menu').removeClass('btn-menu--open')
     }
-    $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
-        if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
-            var target = $(this.hash);
-            target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-            if (target.length) {
-                $('html, body').animate({
-                    scrollTop: (target.offset().top)
-                }, 1000, "easeInOutExpo");
-                closeResponsiveMenu()
-                return false;
-            }
-        }
-    });
+    $('.menu-link').click(function(){
+        elementHidden = "section--hidden"
+        elementVisible = "section--front"
+        elementMenu = "menu-item--selected"
+
+        elementToShow = $(this).attr('id');
+        
+        $('.section').addClass(elementHidden);
+        $('.section').removeClass(elementVisible);
+
+        $("#"+elementToShow+"-section").removeClass(elementHidden);
+        $("#"+elementToShow+"-section").addClass(elementVisible);
+
+        $(".menu-link").removeClass(elementMenu)
+        $("#"+elementToShow).addClass(elementMenu)
+    })
     
-    $("#nav").scrollspy({ activeClass: 'menu-vertival__item--active'});
+    
+    // $("#nav").scrollspy({ activeClass: 'menu-vertival__item--active'});
 
 })(jQuery);
