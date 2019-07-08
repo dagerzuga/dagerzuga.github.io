@@ -1,0 +1,17 @@
+body{
+    height: 100vh;
+    background: $special-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    width: 75vw;
+    max-width: 1200px;
+    height: 90vh;
+    max-height: 800px;
+    border-radius: 10px;
+    display: flex;
+    overflow: hidden;
+}

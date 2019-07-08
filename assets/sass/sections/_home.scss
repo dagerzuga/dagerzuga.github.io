@@ -1,0 +1,36 @@
+.home{
+    display: flex;
+    justify-content: center;
+}
+
+.social-networks{
+    display: flex;
+    width: 375px;
+    margin-top: 15px;
+    justify-content: space-between;
+}
+
+.social-network-list{
+    font-size: 22px;
+}
+
+.social-network__link{
+    display: inline-flex;
+    color: $secondary-color;
+    background: $primary-color;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    &:hover{
+        background: $ternary-color;
+        .social-network__icon{
+            transform: scale(1.2);
+        }
+    }
+}
+
+.social-network__icon{
+    transition: .2s;
+}

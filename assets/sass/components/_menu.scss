@@ -1,0 +1,98 @@
+.menu{
+    width: 15%;
+    height: 100%;
+}
+
+.menu-list{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.menu-item{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: $primary-color;
+    &:hover{
+    background: $ternary-color;
+        .menu-icon{
+            transform: scale(1.2);
+        }
+    }
+}
+
+.menu-icon{
+    font-size: 40px;
+    color: $secondary-color;
+    transition: .2s;
+}
+
+.menu-item--selected{
+    background: $ternary-color;
+}
+
+@include change-on(medium){
+    .container{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .content{
+        top: 0;
+        width: 100%;
+        height: 90vh;
+        overflow: hidden;
+        position: absolute;
+    }
+    .menu{
+        width: 100%;
+        height: 10vh;
+        position: fixed;
+        bottom: 0;
+        z-index: 100;
+    }
+
+    .menu-list{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .home, .skills, .contact{
+        padding-bottom: 40%;
+    }
+
+    .subtitle{
+        font-size: 30px;
+    }
+
+    .subtitle-section{
+        font-size: 34px;
+    }
+
+    .cards_item{
+        &:last-child{
+            padding-bottom: 100px;
+        }
+    }
+
+    .contact-elements{
+        margin-top: 35px;
+        // height: 70%;
+        flex-direction: column;
+    }
+
+
+    .contact-element{
+        width: 150px;
+        height: 150px;
+        &:hover{
+            background: $secondary-color;
+            color: $ternary-color;
+        }
+        &:last-child{
+            margin-top: 35px;
+        }
+    }
+
+}

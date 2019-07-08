@@ -1,5 +1,5 @@
 $breakpoints: (
-    small: 0,
+    small: 290px,
     medium: 420px,
     large: 770px,
     xlarge: 1100px,
@@ -39,10 +39,51 @@ $breakpoints: (
         height: 100vh;
     }
 
+    .home{
+        padding-bottom: 50px;
+    }
+
+
+
 }
+
+// @include change-on(medium){
+//     .skills{
+//         background: orange;
+//     }
+// }
 
 @include change-on(580px){
     .cards_item {
         width: 100%;
+    }
+
+    .skill__icon{
+        font-size: 50px;
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+}
+
+@include change-on(medium){
+    .section{
+        padding: 20px;
+    }
+    .title{
+        font-size: 38px;
+    }
+    .subtitle{
+        font-size: 30px;
+    }
+
+    .skill__icon{
+        font-size: 50px;
+    }
+
+    .social-networks{
+        // display: flex;
+        width: 295px;
+        // margin-top: 15px;
+        // justify-content: space-between;
     }
 }
