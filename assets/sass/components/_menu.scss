@@ -63,7 +63,8 @@
     }
 
     .home, .skills, .contact{
-        padding-bottom: 40%;
+        padding-top: 10%;
+        padding-bottom: 20%;
     }
 
     .subtitle{
@@ -94,7 +95,7 @@
             color: $ternary-color;
         }
         &:last-child{
-            margin-top: 55px;
+            margin-top: 25px;
         }
     }
 
