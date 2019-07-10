@@ -20,8 +20,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 200px;
-    height: 200px;
+    width: 230px;
+    height: 230px;
     color: $ternary-color;
     border-radius: 5px;
     &:hover{
@@ -35,6 +35,6 @@
 }
 
 .contact-element__text{
-    font-size: 20px;
+    font-size: 18px;
     font-family: $secondary-font;
 }
