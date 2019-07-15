@@ -6,9 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>@dagerzuga</title>
     <link rel="shortcut icon" href="/assets/favicon.png" type="image/x-icon">
+    <!-- google fonts -->
     <link href="https://fonts.googleapis.com/css?family=Fredoka+One|Varela+Round" rel="stylesheet">
+    <!-- fontawesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+    <!-- vorillaz devicons -->
     <link href='//cdn.jsdelivr.net/devicons/1.8.0/css/devicons.min.css' rel='stylesheet'>
+    <!-- konpa devicon -->
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+    <!-- custom styles -->
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
@@ -58,19 +64,23 @@
                         <li class="skills__item"><span class="skill__icon  devicons devicons-html5"></span></li>
                         <li class="skills__item"><span class="skill__icon  devicons devicons-css3"></span></li>
                         <li class="skills__item"><span class="skill__icon  devicons devicons-javascript"></span></li>
+                        <li class="skills__item"><span class="skill__icon  devicons devicons-git"></span></li>
                         <li class="skills__item"><span class="skill__icon  devicons devicons-bootstrap"></span></li>
-                        <li class="skills__item"><span class="skill__icon  devicons devicons-sass"></span></li>
+                        <li class="skills__item skill__icon--small"><span class="skill__icon  devicon-foundation-plain"></span></li>
                     </ul>
                     
                     <ul class="skills_list">
                         <li class="skills__item"><span class="skill__icon  fab fa-vuejs"></span></li>
                         <li class="skills__item"><span class="skill__icon  devicons devicons-jquery"></span></li>
-                        <li class="skills__item"><span class="skill__icon  devicons devicons-wordpress"></span></li>
-                        <li class="skills__item"><span class="skill__icon  devicons devicons-npm"></span></li>
+                        <li class="skills__item"><span class="skill__icon  devicons devicons-sass"></span></li>
                         <li class="skills__item"><span class="skill__icon  devicons devicons-gulp"></span></li>
+                        <li class="skills__item"><span class="skill__icon  devicons devicons-npm"></span></li>
+                        <li class="skills__item"><span class="skill__icon  devicons devicons-wordpress"></span></li>
                     </ul>
                     
                     <ul class="skills_list">
+                        <li class="skills__item"><span class="skill__icon  devicons devicons-android"></span></li>
+                        <li class="skills__item"><span class="skill__icon  devicons devicons-java"></span></li>
                         <li class="skills__item"><span class="skill__icon  devicons devicons-php"></span></li>
                         <li class="skills__item"><span class="skill__icon  devicons devicons-laravel"></span></li>
                         <li class="skills__item"><span class="skill__icon  devicons devicons-mysql"></span></li>
@@ -145,11 +155,64 @@
                                                 <span class="card__icon  devicons devicons-css3"></span>
                                                 <span class="card__icon  devicons devicons-javascript"></span>
                                         </ul>
-                                        <a href="https://www.dagerzuga.com/vacationswhere/" target="_blank" class="card_button">Visit</a>
+                                        <div class="button-list">
+                                            <a href="https://www.dagerzuga.com/vacationswhere/" target="_blank" class="card_button">Visit</a>
+                                            <a href="https://github.com/dagerzuga/vacationswhere" target="_blank" class="card_button">Code</a>
+                                        </div>
                                 </div>
                     
                             </div>
                     </li>
+
+
+                    <!-- Mapache Docente-->
+                    <li class="cards_item">
+                            <div class="card">
+                    
+                                <div class="card_image">
+                                    <img src="./assets/images/mapachedocente.png">
+                                </div>
+                    
+                                <div class="card_content">
+                                        <h2 class="card_heading">Mapache Docente</h2>
+                                        <p  class="card_text">Social network android app with navbar, login, register, search, bookmarks, settings & upload pictures, all with firebase.
+                                        </p>
+                                        <ul class="card_list--special">
+                                            <span class="card__special-item">SEO Positioning</span>
+                                        </ul>
+                                        <div class="button-list">
+                                            <a href="https://github.com/dagerzuga/mapachedocente" target="_blank" class="card_button">READ</a>
+                                        </div>
+                                </div>
+                    
+                            </div>
+                    </li>
+
+                    <!-- Creaciones Lucy -->
+                    <li class="cards_item">
+                            <div class="card">
+                    
+                                <div class="card_image">
+                                        <img src="./assets/images/demo-creaciones.png">
+                                </div>
+                    
+                                <div class="card_content">
+                                        <h2 class="card_heading">Creaciones Lucy</h2>
+                                        <p class="card_text"> E-commerce theme using Wordpress's WooCommerce, plugin to support multiple languages 
+                                            and bootstrap for responsive features.
+                                        </p>
+                                        <ul class="card_list">
+                                                <span class="card__icon devicons devicons-wordpress"></span>
+                                                <span class="card__icon devicons devicons-bootstrap"></span>
+                                                <span class="card__icon devicons devicons-sass"></span>
+                                                <span class="card__icon devicons devicons-php"></span>
+                                        </ul>
+                                        <a href="http://dev-dager-rachel.pantheonsite.io/es/productos/" target="_blank" class="card_button">Visit</a>
+                                </div>
+                        
+                            </div>
+                        </li>
+    
 
                     <!-- Rachel's place -->
                     <li class="cards_item">
@@ -161,7 +224,7 @@
                     
                                 <div class="card_content">
                                         <h2 class="card_heading">Rachel's place</h2>
-                                        <p  class="card_text">Site using modern features like lightbox effect on projects, easing scroll on window and masonry layout.
+                                        <p  class="card_text">Portfolio site using modern features like lightbox effect on projects, easing scroll on window and masonry layout.
                                         </p>
                                         <ul class="card_list">
                                             <span class="card__icon devicons devicons-html5"></span>
@@ -173,55 +236,82 @@
                     
                             </div>
                     </li>
+
+                    <!-- Floppybord-->
+                    <li class="cards_item">
+                            <div class="card">
+                    
+                                <div class="card_image">
+                                    <img src="./assets/images/floppybord.png">
+                                </div>
+                    
+                                <div class="card_content">
+                                        <h2 class="card_heading">Floppy bord</h2>
+                                        <p  class="card_text">Game made with phaser.js as framework. Random characters, obscatules, pause button & save score on localstorage.
+                                        </p>
+                                        <ul class="card_list">
+                                            <span class="card__icon devicons devicons-html5"></span>
+                                            <span class="card__icon devicons devicons-css3"></span>
+                                            <span class="card__icon devicons devicons-javascript"></span>
+                                        </ul>
+                                        <div class="button-list">
+                                            <a href="https://www.dagerzuga.com/floppybord/" target="_blank" class="card_button">Visit</a>
+                                            <a href="https://github.com/dagerzuga/floppybord" target="_blank" class="card_button">Code</a>
+                                        </div>
+                                </div>
+                    
+                            </div>
+                    </li>
                                  
-                    <!-- Creaciones Lucy -->
+                    
+                    <!-- Journaler-->
+                    <li class="cards_item">
+                            <div class="card">
+                    
+                                <div class="card_image">
+                                    <img src="./assets/images/journaler.png">
+                                </div>
+                    
+                                <div class="card_content">
+                                        <h2 class="card_heading">The Journaler</h2>
+                                        <p  class="card_text">Social network android app with navbar, login, register, search, bookmarks, settings & upload pictures, all with firebase.
+                                        </p>
+                                        <ul class="card_list">
+                                            <span class="card__icon devicons devicons-android"></span>
+                                            <span class="card__icon devicons devicons-java"></span>
+                                            <span class="card__icon devicons devicons-firebase"></span>
+                                        </ul>
+                                        <div class="button-list">
+                                            <a href="https://github.com/dagerzuga/The-Journaler" target="_blank" class="card_button">Code</a>
+                                        </div>
+                                </div>
+                    
+                            </div>
+                    </li>
+
+                    <!-- Extension -->
                     <li class="cards_item">
                         <div class="card">
                 
                             <div class="card_image">
-                                    <img src="./assets/images/demo-creaciones.png">
+                                <img src="./assets/images/demo-extension.png">
                             </div>
                 
                             <div class="card_content">
-                                    <h2 class="card_heading">Creaciones Lucy</h2>
-                                    <p class="card_text"> E-commerce theme using Wordpress's WooCommerce, plugin to support multiple languages 
-                                        and bootstrap for responsive features.
+                                    <h2 class="card_heading">Currency Switch</h2>
+                                    <p class="card_text">Chrome extension to switch between currencies values using angular with angular material + requests to an external API.
                                     </p>
                                     <ul class="card_list">
-                                            <span class="card__icon devicons devicons-wordpress"></span>
-                                            <span class="card__icon devicons devicons-bootstrap"></span>
+                                            <span class="card__icon devicons devicons-html5"></span>
+                                            <span class="card__icon devicons devicons-javascript"></span>
                                             <span class="card__icon devicons devicons-sass"></span>
-                                            <span class="card__icon devicons devicons-php"></span>
                                     </ul>
-                                    <a href="http://dev-dager-rachel.pantheonsite.io/es/productos/" target="_blank" class="card_button">Visit</a>
+                                    <a href="https://chrome.google.com/webstore/detail/switch-currencies/dplmlnbgodllljfopnnamdickboaagfi/related?hl=es&authuser=0" target="_blank" class="card_button">Visit</a>
                             </div>
-                    
+                
                         </div>
                     </li>
 
-                     <!-- Extension -->
-                     <li class="cards_item">
-                            <div class="card">
-                    
-                                <div class="card_image">
-                                    <img src="./assets/images/demo-extension.png">
-                                </div>
-                    
-                                <div class="card_content">
-                                        <h2 class="card_heading">Currency Switch</h2>
-                                        <p class="card_text">Chrome extension to switch between currencies values using angular with angular material + requests to an external API.
-                                        </p>
-                                        <ul class="card_list">
-                                                <span class="card__icon devicons devicons-angular"></span>
-                                                <span class="card__icon devicons devicons-sass"></span>
-                                                <span class="card__icon devicons devicons-javascript"></span>
-                                        </ul>
-                                        <a href="https://chrome.google.com/webstore/detail/switch-currencies/dplmlnbgodllljfopnnamdickboaagfi/related?hl=es&authuser=0" target="_blank" class="card_button">Visit</a>
-                                </div>
-                    
-                            </div>
-                    </li>
-                    
                 </ul>
             </div>
 

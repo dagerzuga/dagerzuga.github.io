@@ -17,3 +17,14 @@
         color: $primary-color;
     }
 }
+
+.skill__icon--small{
+    display: flex;
+    // justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+    // background: #000;
+    span{
+        font-size: 58px;
+    }
+}

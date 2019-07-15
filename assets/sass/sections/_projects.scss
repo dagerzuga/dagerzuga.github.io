@@ -35,15 +35,15 @@ $card-radius:         5px;
     // background: #000;
 
     // > 640px, 2 items/row
-    // @media screen and (min-width: 42em) and ( max-width: 60em ) {
-    //     .no-flexbox &:nth-child(2n+1) { clear: both; }
-    // }
+    @media screen and (min-width: 42em) and ( max-width: 60em ) {
+        .no-flexbox &:nth-child(2n+1) { clear: both; }
+    }
 
-    // // // > 960px, 3 items/row
-    // @media screen and (min-width: 60em) {
-    //         width: 33.3333%;
-    // //         .no-flexbox &:nth-child(3n+1) { clear: both; }
-    // }
+    // // > 960px, 3 items/row
+    @media screen and (min-width: 60em) {
+            width: 33.3333%;
+    //         .no-flexbox &:nth-child(3n+1) { clear: both; }
+    }
 }
 
 .card {
@@ -98,7 +98,7 @@ $card-radius:         5px;
 }
 
 .card_list{
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -116,3 +116,40 @@ $card-radius:         5px;
     }
 }
 
+.button-list{
+    display: flex;
+    justify-content: space-around;
+    a{
+        flex-grow: 1;
+    }
+    a:first-child{
+        margin-right: 10px;
+        &:hover{
+            background: $primary-color;
+        }
+    }
+    a:last-child{
+        margin-left: 10px;
+        &:hover{
+            border: 2px solid $ternary-color;
+            background: $ternary-color;
+        }
+    }
+}
+
+.card_list--special{
+    margin-bottom: 15px;
+    display: flex;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    // flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    // background: #000;
+}
+
+.card__special-item{
+    font-size: 20px;
+    font-family: $secondary-font;
+    color: $ternary-color;
+}
