@@ -95,9 +95,43 @@
             background: $secondary-color;
             color: $ternary-color;
         }
-        &:last-child{
-            margin-top: 25px;
+        &:first-child{
+            margin-bottom: 60px;
         }
     }
 
+
+    body{
+        background: $secondary-color;
+    }
+
+    .content{
+        height: 90%;
+    }
+    
+    .section{
+        height: 100%;
+    }
+
+    .skills_list{
+        flex-wrap: wrap;
+    }
+
+    .skill__icon--small{
+        span{
+            font-size: 36px;
+        }
+    }
+
+    .skill__icon--hide{
+        display: none;
+    }
+
+    .skills_list--show{
+        display: flex;
+    }
+
+    .contact{
+        overflow: hidden;
+    }
 }

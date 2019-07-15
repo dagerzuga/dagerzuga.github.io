@@ -2,6 +2,7 @@
     display: flex;
     justify-content: center;
 }
+
 .skills_list{
     display: flex;
     margin-bottom: 15px;
@@ -20,11 +21,13 @@
 
 .skill__icon--small{
     display: flex;
-    // justify-content: center;
     align-items: center;
     margin-top: 5px;
-    // background: #000;
     span{
         font-size: 58px;
     }
+}
+
+.skills_list--show{
+    display: none;
 }
