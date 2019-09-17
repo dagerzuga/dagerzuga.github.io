@@ -1,36 +1,30 @@
-(function($){
+$('.menu__link').click(function() {
+	var getElem = $(this).attr('href');
+	var targetDistance = 20;
+	if ($(getElem).length) {
+		var getOffset = $(getElem).offset().top;
+		$('html,body').animate({
+			scrollTop: getOffset - targetDistance
+		}, 500);
+	}
+	return false;
+});
 
-    $('#btn-menu').click(function(){
-        toggleResponsiveMenu()
-    });
-    
-    function toggleResponsiveMenu(){
-        $('.menu-vertival').toggleClass('menu-vertival--open')
-        $('#btn-menu').toggleClass('btn-menu--open')
-    }
-    
-    function closeResponsiveMenu(){
-        $('.menu-vertival').removeClass('menu-vertival--open')
-        $('#btn-menu').removeClass('btn-menu--open')
-    }
-    $('.menu-link').click(function(){
-        elementHidden = "section--hidden"
-        elementVisible = "section--front"
-        elementMenu = "menu-item--selected"
+// When the user scrolls the page, execute myFunction
+window.onscroll = function() {myFunction()};
 
-        elementToShow = $(this).attr('id');
-        
-        $('.section').addClass(elementHidden);
-        $('.section').removeClass(elementVisible);
+// Get the navbar
+var section = document.getElementById("content");
 
-        $("#"+elementToShow+"-section").removeClass(elementHidden);
-        $("#"+elementToShow+"-section").addClass(elementVisible);
+// Get the offset position of the navbar
+var sticky = section.offsetTop;
 
-        $(".menu-link").removeClass(elementMenu)
-        $("#"+elementToShow).addClass(elementMenu)
-    })
-    
-    
-    // $("#nav").scrollspy({ activeClass: 'menu-vertival__item--active'});
+// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function myFunction() {
 
-})(jQuery);
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}

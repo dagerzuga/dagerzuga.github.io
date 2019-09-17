@@ -1,0 +1,126 @@
+.section__home{
+    height: calc(100vh - 80px);
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 10%;
+    // background: #000;
+}
+
+.hero-image{
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/3.jpg');   
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.name{
+    margin-bottom: .1em;
+    color: $secondary-color;
+    font-size: 3.6em;
+    font-family: $primary-font;
+}
+
+.position{
+    margin-bottom: .1em;
+    font-size: 2.4em;
+    font-family: $secondary-font;
+    color: $secondary-color;
+}
+
+.description{
+    color: $secondary-color;
+    font-family: $secondary-font;
+    font-size: 1.3em;
+    margin-bottom: 15px;
+}
+
+$height: 50px;
+
+.text-container{
+    overflow: hidden;
+    // width: 520px;
+    font-size: 40px;
+    height: $height;
+    font-family: Montserrat;
+  }
+  
+  .dynamic-text, .static-text{
+    display: inline-block;
+  }
+  
+  .static-text{
+    margin-right: 10px;
+    color: #41D3BD;
+  }
+  
+  .dynamic-text{
+    list-style: none;
+    position: absolute;
+    overflow: hidden;
+    height: $height;
+  }
+  
+  .item{
+    position: relative;
+    top: 0;
+    animation: move 5s infinite 1s;
+    &:first-child{
+      color: #01BAEF;
+    }
+    &:nth-child(2){
+      color: #F79256;
+    }
+    &:nth-child(3){
+      color: #0FA3B1;
+    }
+    &:nth-child(4){
+      color: #FE5F55;
+    }
+    &:nth-child(5){
+      color: #B0DB43;
+    }
+  }
+  
+@keyframes move{
+    0%{top: 0px;}
+    20%{top: -50px;}
+    40%{top: -96px;}
+    60%{top: -146px;}
+    80%{top: -196px;}
+}
+
+
+.social-networks{
+    display: flex;
+    width: 375px;
+    margin-top: 15px;
+    justify-content: space-between;
+}
+
+.social-network-list{
+    font-size: 22px;
+}
+
+.social-network__link{
+    text-decoration: none;
+    display: inline-flex;
+    color: $secondary-color;
+    border: solid $secondary-color 1px;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    &:hover{
+        color: $primary-color;
+        background: $secondary-color;
+    }
+}
+
+.social-network__icon{
+    transition: all .2s;
+}

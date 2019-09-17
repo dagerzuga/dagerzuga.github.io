@@ -4,340 +4,118 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>@dagerzuga</title>
-    <link rel="shortcut icon" href="/assets/favicon.png" type="image/x-icon">
-    <!-- google fonts -->
+    <title>dagerzuga</title>
     <link href="https://fonts.googleapis.com/css?family=Fredoka+One|Varela+Round" rel="stylesheet">
-    <!-- fontawesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
-    <!-- vorillaz devicons -->
-    <link href='//cdn.jsdelivr.net/devicons/1.8.0/css/devicons.min.css' rel='stylesheet'>
-    <!-- konpa devicon -->
-    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
-    <!-- custom styles -->
+    <link rel="stylesheet" href="./vendors/bootstrap-grid.min.css">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="https://kit.fontawesome.com/33ad03a185.js"></script>
 </head>
 <body>
-    <section class="container">
-        <div class="menu">
-            <ul class="menu-list">
-                <a class="menu-link menu-item menu-item--selected" id="home" ><span class="menu-icon fas fa-home"></span></a>
-                <a class="menu-link menu-item" id="skills"   ><span class="menu-icon fas fa-pencil-ruler"></span></a>
-                <a class="menu-link menu-item" id="projects" ><span class="menu-icon fas fa-briefcase"></span></a>
-                <a class="menu-link menu-item" id="contact"  ><span class="menu-icon fas fa-envelope"></span></a>
-                <a class="menu-item" id="" href="./assets/dagerzuniga.pdf" target="_blank"><span class="menu-icon fas fa-file-alt"></span></a>
-            </ul>
-        </div>
-        <div class="content">
-            
-            <div class="section home section--front" id="home-section">
-                <img class="profile-picture" src="./assets/images/dager.jpg" alt="dager zuñiga">
-                <h1 class="title">Dáger Zúñiga N</h1>
-                <h2 class="subtitle">Full Stack Developer</h2>
-                <ul class="social-networks">
-                    <li class="social-network-list">
-                        <a href="https://www.linkedin.com/in/dagerzuga/" target="_blank" class="social-network__link"><span class="social-network__icon fab fa-linkedin-in"></span></a>
-                    </li>
-                    
-                    <li class="social-network-list">
-                        <a href="https://github.com/dagerzuga" target="_blank" class="social-network__link"><span class="social-network__icon fab fa-github"></span></a>
-                    </li>
-                        
-                    <li class="social-network-list">
-                        <a href="https://codepen.io/dagerzuga/" target="_blank" class="social-network__link"><span class="social-network__icon fab fa-codepen"></span></a>
-                    </li>
-                    
-                    <li class="social-network-list">
-                        <a href="https://www.instagram.com/dagerzuga/" target="_blank" class="social-network__link"><span class="social-network__icon fab fa-instagram"></span></a>
-                    </li>
-                    
-                    <li class="social-network-list">
-                        <a href="https://www.facebook.com/dagerzuga" target="_blank" class="social-network__link"><span class="social-network__icon fab fa-facebook-f"></span></a>
-                    </li>
-                </ul>
-            </div>
-
-            <div class="section skills section--hidden" id="skills-section">
-                    <h2 class="subtitle subtitle-section">Technologies I know</h2>
-
-                    <ul class="skills_list">
-                        <li class="skills__item"><span class="skill__icon  devicons devicons-html5"></span></li>
-                        <li class="skills__item"><span class="skill__icon  devicons devicons-css3"></span></li>
-                        <li class="skills__item"><span class="skill__icon  devicons devicons-javascript"></span></li>
-                        <li class="skills__item"><span class="skill__icon  devicons devicons-git"></span></li>
-                        <li class="skills__item"><span class="skill__icon  devicons devicons-bootstrap"></span></li>
-                        <li class="skills__item skill__icon--small skill__icon--hide"><span class="skill__icon  devicon-foundation-plain"></span></li>
-                    </ul>
-                    
-                    <ul class="skills_list skills_list--show">
-                        <li class="skills__item skill__icon--small"><span class="skill__icon  devicon-foundation-plain"></span></li>
-                        <li class="skills__item"><span class="skill__icon  devicons devicons-wordpress"></span></li>
-                        <li class="skills__item"><span class="skill__icon  devicons devicons-firebase"></span></li>
-                    </ul>
-
-                    <ul class="skills_list">
-                        <li class="skills__item"><span class="skill__icon  fab fa-vuejs"></span></li>
-                        <li class="skills__item"><span class="skill__icon  devicons devicons-jquery"></span></li>
-                        <li class="skills__item"><span class="skill__icon  devicons devicons-sass"></span></li>
-                        <li class="skills__item"><span class="skill__icon  devicons devicons-gulp"></span></li>
-                        <li class="skills__item"><span class="skill__icon  devicons devicons-npm"></span></li>
-                        <li class="skills__item skill__icon--hide"><span class="skill__icon  devicons devicons-wordpress"></span></li>
-                    </ul>
-                    
-                    <ul class="skills_list">
-                        <li class="skills__item"><span class="skill__icon  devicons devicons-android"></span></li>
-                        <li class="skills__item"><span class="skill__icon  devicons devicons-java"></span></li>
-                        <li class="skills__item"><span class="skill__icon  devicons devicons-php"></span></li>
-                        <li class="skills__item"><span class="skill__icon  devicons devicons-laravel"></span></li>
-                        <li class="skills__item"><span class="skill__icon  devicons devicons-mysql"></span></li>
-                        <li class="skills__item skill__icon--hide"><span class="skill__icon  devicons devicons-firebase"></span></li>
-                    </ul>
-            </div>
-
-            <div class="section projects section--hidden" id="projects-section">
-                <h2 class="subtitle subtitle-section">Projects I've worked on</h2>
-
-                <ul class="cards">
-                    <!-- Tasky -->
-                    <li class="cards_item">
-                            <div class="card">
-                    
-                                <div class="card_image card_image_tasky">
-                                    <img src="./assets/images/demo-tasky.png">
-                                </div>
-                    
-                                <div class="card_content">
-                                        <h2 class="card_heading">Tasky</h2>
-                                        <p class="card_text"> Task management app. Register, login and manage your tasks and change your personal info.</p>
-                                        <ul class="card_list">
-                                            <span class="card__icon fab fa-vuejs"></span>
-                                            <span class="card__icon devicons devicons-bootstrap"></span>
-                                            <span class="card__icon devicons devicons-firebase"></span>
-                                        </ul>
-                                        <a href="https://dagerzuga.github.io/tasky/" target="_blank" class="card_button">Visit</a>
-                                </div>
-                    
-                            </div>
-                    </li>
-                    
-                    <!-- Messenger -->
-                    <li class="cards_item">
-                        <div class="card">
-                
-                            <div class="card_image">
-                                    <img src="./assets/images/demo-messenger.png">
-                            </div>
-                
-                            <div class="card_content">
-                                    <h2 class="card_heading">Messenger</h2>
-                                    <p class="card_text">All functional facebook messenger-like chat built using laravel.</p>
-                                    <ul class="card_list">
-                                            <span class="card__icon fab fa-vuejs"></span>
-                                            <span class="card__icon devicons devicons-laravel"></span>
-                                            <span class="card__icon devicons devicons-mysql"></span>
-                                    </ul>
-                                    <a href="https://dagerzuga-messenger.herokuapp.com/" target="_blank" class="card_button">Visit</a>
-                            </div>
-                
-                        </div>
-                    </li>
-
-                    <!-- Vacationswhere -->
-                    <li class="cards_item">
-                            <div class="card">
-                    
-                                <div class="card_image">
-                                        <img src="./assets/images/demo-vacationswhere.png">
-                                </div>
-                    
-                                <div class="card_content">
-                                        <h2 class="card_heading">vacationswhere</h2>
-                                        <p  class="card_text">Made using mobile first approach and modern css techniques such as flex-box and css grid.
-                                        </p>
-                                        <ul class="card_list">
-                                                <span class="card__icon  devicons devicons-html5"></span>
-                                                <span class="card__icon  devicons devicons-css3"></span>
-                                                <span class="card__icon  devicons devicons-javascript"></span>
-                                        </ul>
-                                        <div class="button-list">
-                                            <a href="https://www.dagerzuga.com/vacationswhere/" target="_blank" class="card_button">Visit</a>
-                                            <a href="https://github.com/dagerzuga/vacationswhere" target="_blank" class="card_button">Code</a>
-                                        </div>
-                                </div>
-                    
-                            </div>
-                    </li>
-
-
-                    <!-- Mapache Docente-->
-                    <li class="cards_item">
-                            <div class="card">
-                    
-                                <div class="card_image">
-                                    <img src="./assets/images/mapachedocente.png">
-                                </div>
-                    
-                                <div class="card_content">
-                                        <h2 class="card_heading">Mapache Docente</h2>
-                                        <p  class="card_text">E-commerce site made with Wordpress, positioned on google's first search result with 3 months of work. Google Ads, Analytics and more.
-                                        </p>
-                                        <ul class="card_list--special">
-                                            <span class="card__special-item">SEO Positioning</span>
-                                        </ul>
-                                        <div class="button-list">
-                                            <a href="https://github.com/dagerzuga/mapachedocente" target="_blank" class="card_button">READ</a>
-                                        </div>
-                                </div>
-                    
-                            </div>
-                    </li>
-
-                    <!-- Creaciones Lucy -->
-                    <li class="cards_item">
-                            <div class="card">
-                    
-                                <div class="card_image">
-                                        <img src="./assets/images/demo-creaciones.png">
-                                </div>
-                    
-                                <div class="card_content">
-                                        <h2 class="card_heading">Creaciones Lucy</h2>
-                                        <p class="card_text"> E-commerce theme using Wordpress's WooCommerce, plugin to support multiple languages 
-                                            and bootstrap for responsive features.
-                                        </p>
-                                        <ul class="card_list">
-                                                <span class="card__icon devicons devicons-wordpress"></span>
-                                                <span class="card__icon devicons devicons-bootstrap"></span>
-                                                <span class="card__icon devicons devicons-sass"></span>
-                                        </ul>
-                                        <a href="http://dev-dager-rachel.pantheonsite.io/es/productos/" target="_blank" class="card_button">Visit</a>
-                                </div>
-                        
-                            </div>
-                        </li>
+    <div class="hero-image">
+        <section class="header">
     
-
-                    <!-- Rachel's place -->
-                    <li class="cards_item">
-                            <div class="card">
-                    
-                                <div class="card_image">
-                                    <img src="./assets/images/demo-rachel.png">
-                                </div>
-                    
-                                <div class="card_content">
-                                        <h2 class="card_heading">Rachel's place</h2>
-                                        <p  class="card_text">Portfolio site using modern features like lightbox effect on projects, easing scroll on window and masonry layout.
-                                        </p>
-                                        <ul class="card_list">
-                                            <span class="card__icon devicons devicons-html5"></span>
-                                            <span class="card__icon devicons devicons-jquery"></span>
-                                            <span class="card__icon devicons devicons-sass"></span>
-                                        </ul>
-                                        <a href="https://www.rachelms.com" target="_blank" class="card_button">Visit</a>
-                                </div>
-                    
-                            </div>
-                    </li>
-
-                    <!-- Floppybord-->
-                    <li class="cards_item">
-                            <div class="card">
-                    
-                                <div class="card_image">
-                                    <img src="./assets/images/floppybord.png">
-                                </div>
-                    
-                                <div class="card_content">
-                                        <h2 class="card_heading">Floppy bord</h2>
-                                        <p  class="card_text">Game made with phaser.js as framework. Random characters, obscatules, pause button & save score on localstorage.
-                                        </p>
-                                        <ul class="card_list">
-                                            <span class="card__icon devicons devicons-html5"></span>
-                                            <span class="card__icon devicons devicons-css3"></span>
-                                            <span class="card__icon devicons devicons-javascript"></span>
-                                        </ul>
-                                        <div class="button-list">
-                                            <a href="https://www.dagerzuga.com/floppybord/" target="_blank" class="card_button">Visit</a>
-                                            <a href="https://github.com/dagerzuga/floppybord" target="_blank" class="card_button">Code</a>
-                                        </div>
-                                </div>
-                    
-                            </div>
-                    </li>
-                                 
-                    
-                    <!-- Journaler-->
-                    <li class="cards_item">
-                            <div class="card">
-                    
-                                <div class="card_image">
-                                    <img src="./assets/images/journaler.png">
-                                </div>
-                    
-                                <div class="card_content">
-                                        <h2 class="card_heading">The Journaler</h2>
-                                        <p  class="card_text">Social network android app with navbar, login, register, search, bookmarks, settings & upload pictures, all with firebase.
-                                        </p>
-                                        <ul class="card_list">
-                                            <span class="card__icon devicons devicons-android"></span>
-                                            <span class="card__icon devicons devicons-java"></span>
-                                            <span class="card__icon devicons devicons-firebase"></span>
-                                        </ul>
-                                        <div class="button-list">
-                                            <a href="https://github.com/dagerzuga/The-Journaler" target="_blank" class="card_button">Code</a>
-                                        </div>
-                                </div>
-                    
-                            </div>
-                    </li>
-
-                    <!-- Extension -->
-                    <li class="cards_item">
-                        <div class="card">
-                
-                            <div class="card_image">
-                                <img src="./assets/images/demo-extension.png">
-                            </div>
-                
-                            <div class="card_content">
-                                    <h2 class="card_heading">Currency Switch</h2>
-                                    <p class="card_text">Chrome extension to switch between currencies values using angular with angular material + requests to an external API.
-                                    </p>
-                                    <ul class="card_list">
-                                            <span class="card__icon devicons devicons-html5"></span>
-                                            <span class="card__icon devicons devicons-javascript"></span>
-                                            <span class="card__icon devicons devicons-sass"></span>
-                                    </ul>
-                                    <a href="https://chrome.google.com/webstore/detail/switch-currencies/dplmlnbgodllljfopnnamdickboaagfi/related?hl=es&authuser=0" target="_blank" class="card_button">Visit</a>
-                            </div>
-                
-                        </div>
-                    </li>
-
-                </ul>
-            </div>
-
-            <div class="section contact section--hidden" id="contact-section">
-                
-                <h2 class="subtitle subtitle-section">Contact me</h2>
-                
-                <div class="contact-elements">
-                    <a class="contact-element" href="mailto:dagerzuga@gmail.com">
-                        <span class="contact-element__icon fas fa-envelope"></span>
-                        <span class="contact-element__text">dagerzuga@gmail.com</span>
+            <!-- header -->
+            <div class="row header__row px-c" id="navbar">
+                <div class="col-2">
+                </div>
+        
+                <div class="menu col-5">
+                    <a href="#section__home" class="menu__link">
+                        <span class="menu__link__text menu__link__text--active">
+                            Home
+                        </span>
                     </a>
-                    
-                    <a class="contact-element" href="https://t.me/dagerzuga" target="_blank">
-                        <span class="contact-element__icon fab fa-telegram-plane"></span>
-                        <span class="contact-element__text">@dagerzuga</span>
+                    <a href="#section__about" class="menu__link">
+                        <span class="menu__link__text">
+                            About
+                        </span>
+                    </a>
+                    <a href="#section__work" class="menu__link">
+                        <span class="menu__link__text">
+                            Work
+                        </span>
+                    </a>
+                    <a href="#section__resume" class="menu__link">
+                        <span class="menu__link__text">
+                            Resume
+                        </span>
+                    </a>
+                    <a href="#" class="menu__link">
+                        <span class="menu__link__text">
+                            Blog
+                        </span>
+                    </a>
+                    <a href="#section__contact" class="menu__link">
+                        <span class="menu__link__text">
+                            Contact
+                        </span>
                     </a>
                 </div>
             </div>
+    
+            <!-- content -->
+            <div class="content px-c">
+                <div class="section__home" id="section__home">
+
+                    <h1 class="name">Dáger Zúñiga</h1>
+
+                    <!-- <h2 class="position">Full stack developer</h2> -->
+                    <div class="text-container">
+                            <p class="static-text">I'm Dáger Zúñiga,</p>
+                            <ul class="dynamic-text">
+                                  <li class="item">full stack developer</li>
+                                  <li class="item">mobile developer</li>
+                                  <li class="item">UX/UI desiger</li>
+                                  <li class="item">content creator</li>
+                                  <li class="item">professor</li>
+                            </ul>
+                    </div>
+
+                    <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione vitae facilis dicta cum, similique optio veniam saepe nemo suscipit. Ab.</p>
+
+                    <ul class="social-networks">
+                            <li class="social-network-list">
+                                <a href="https://www.linkedin.com/in/dagerzuga/" target="_blank" class="social-network__link"><span class="social-network__icon fab fa-linkedin-in"></span></a>
+                            </li>
+                            
+                            <li class="social-network-list">
+                                <a href="https://github.com/dagerzuga" target="_blank" class="social-network__link"><span class="social-network__icon fab fa-github"></span></a>
+                            </li>
+                                
+                            <li class="social-network-list">
+                                <a href="https://codepen.io/dagerzuga/" target="_blank" class="social-network__link"><span class="social-network__icon fab fa-codepen"></span></a>
+                            </li>
+                            
+                            <li class="social-network-list">
+                                <a href="https://www.instagram.com/dagerzuga/" target="_blank" class="social-network__link"><span class="social-network__icon fab fa-instagram"></span></a>
+                            </li>
+                            
+                            <li class="social-network-list">
+                                <a href="https://www.facebook.com/dagerzuga" target="_blank" class="social-network__link"><span class="social-network__icon fab fa-facebook-f"></span></a>
+                            </li>
+                    </ul>                                     
+                </div>
+            </div>
+    
+        </section>
+    </div>
+
+    <section class="content" id="content">
+        <div class="section section__about px-c" id="section__about">
+            <h2>About</h2>
+        </div>
+        <div class="section section__work px-c" id="section__work">
+            <h2>Work</h2>
+        </div>
+        <div class="section section__resume px-c" id="section__resume">
+            <h2>Resume</h2>
+        </div>
+        <div class="section section__contact px-c" id="section__contact">
+            <h2>Contact</h2>
         </div>
     </section>
 
     <script src="./vendors/jquery.min.js"></script>
-    <script src="./assets/js/app.js"></script>  
+    <script src="./assets/js/app.js"></script>
 </body>
 </html>

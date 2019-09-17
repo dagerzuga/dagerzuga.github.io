@@ -1,12 +1,6 @@
-// helpers
-@import './base/reset';
-@import './helpers/variables';
-@import './base/layout';
-@import './base/sections';
-@import './sections/skills';
-@import './sections/contact';
-@import './sections/home';
-@import './sections/projects';
-@import './helpers/responsive';
-@import './components/scrollbar';
-@import './components/menu';
+@import 'helpers/variables';
+@import 'helpers/reset';
+
+@import 'sections/header';
+@import 'sections/section-main';
+@import 'sections/section-home';
