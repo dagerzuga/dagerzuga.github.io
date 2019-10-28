@@ -9,6 +9,10 @@ img{
     width: 100%;
 }
 
+body{
+    background: #FAFAFA;
+}
+
 .container-link{
     display: flex;
     align-items: center;
