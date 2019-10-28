@@ -1,38 +1,31 @@
-.header{
-    // background: $primary-color;
-}
-
-/* The sticky class is added to the navbar with JS when it reaches its scroll position */
 .sticky {
     position: fixed;
     top: 0;
     margin: 0;
-    // padding: 
     width: 100%;
-    // background: $primary-color;
-    // transition: n1s;
-    transition: all 1s;
-    
-    // transition: width 1s;
-    border-bottom: solid $ternary-color 0.5px;
+    background: #fff;
+    // transition: .5s;
+    // border-bottom: solid $ternary-color 0.5px;
+    box-shadow: 0px 0px 18px 1px rgba(0, 0, 0, 0.1);
+    z-index: 999;
     .menu .menu__link .menu__link__text{
         color: $ternary-color;
     }
+
+    .brand__link{
+        color: $ternary-color;
+        display: inline;
+    }
   }
-  
-  /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
-// .sticky + .content {
-//     padding-top: 60px;
-// }
 
 .header__row{
     transition: background-color 1s;
-    // width: 100%;
     padding-top: 2em;
     padding-bottom: 1em;
     align-content: center;
     justify-content: space-between;
 }
+
 
 .menu{
     padding: 0;
@@ -77,11 +70,11 @@
 }
 
 .brand{
-    font-size: 1.8em;
+    font-size: 1.5em;
     font-family: $primary-font;
 }
 
 .brand__link{
-    text-decoration: none;
-    color: $primary-color;
+    color: #fff;
+    display: none;
 }

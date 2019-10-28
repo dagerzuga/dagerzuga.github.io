@@ -1,0 +1,35 @@
+.row-about{
+    justify-content: space-between;
+}
+
+.about__photo{
+    overflow: hidden;
+    position: relative;
+    img{
+        padding-left: 45px;
+        padding-bottom: 25px;
+        position: relative;
+        width: 420px;
+        height: 100%;
+        z-index: 1;
+        // box-shadow: 0 0 85px 0 rgba(0, 0, 0, 0.14);
+    }
+
+    &:before{
+        content: "";
+        background-color: #f2f2f2;
+        width: 420px;
+        height: 420px;
+        position: absolute;
+        bottom: -15%;
+        left: -5%;
+        z-index: 0;
+    }
+}
+
+.text{
+    font-size: 20px;
+    font-family: $secondary-font;
+    margin-bottom: 20px;
+    color: $dark-color;
+}

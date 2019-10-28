@@ -5,16 +5,17 @@
     flex-direction: column;
     justify-content: center;
     padding-bottom: 10%;
-    // background: #000;
 }
 
 .hero-image{
     height: 100vh;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/3.jpg');   
+    background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+
 }
 
 .name{
@@ -28,7 +29,7 @@
     margin-bottom: .1em;
     font-size: 2.4em;
     font-family: $secondary-font;
-    color: $secondary-color;
+    color: #41D3BD;
 }
 
 .description{
@@ -37,62 +38,6 @@
     font-size: 1.3em;
     margin-bottom: 15px;
 }
-
-$height: 50px;
-
-.text-container{
-    overflow: hidden;
-    // width: 520px;
-    font-size: 40px;
-    height: $height;
-    font-family: Montserrat;
-  }
-  
-  .dynamic-text, .static-text{
-    display: inline-block;
-  }
-  
-  .static-text{
-    margin-right: 10px;
-    color: #41D3BD;
-  }
-  
-  .dynamic-text{
-    list-style: none;
-    position: absolute;
-    overflow: hidden;
-    height: $height;
-  }
-  
-  .item{
-    position: relative;
-    top: 0;
-    animation: move 5s infinite 1s;
-    &:first-child{
-      color: #01BAEF;
-    }
-    &:nth-child(2){
-      color: #F79256;
-    }
-    &:nth-child(3){
-      color: #0FA3B1;
-    }
-    &:nth-child(4){
-      color: #FE5F55;
-    }
-    &:nth-child(5){
-      color: #B0DB43;
-    }
-  }
-  
-@keyframes move{
-    0%{top: 0px;}
-    20%{top: -50px;}
-    40%{top: -96px;}
-    60%{top: -146px;}
-    80%{top: -196px;}
-}
-
 
 .social-networks{
     display: flex;

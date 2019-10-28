@@ -1,0 +1,40 @@
+.container-link{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    height: 100vh;
+    background: $secondary-color;
+    padding-top: 15px;
+}
+
+*{
+    overflow: hidden; 
+}
+
+.link-name{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: $primary-font;
+    color: $ternary-color;
+}
+
+.link-img{
+    width: 170px;
+    height: 100%;
+    border-radius: 50%;
+    border: solid 5px $ternary-color;
+}
+
+.row-link{
+    width: 220px;
+    border: solid $dark-color 2px;
+    margin: 10px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 20px;
+    text-decoration: none;
+    font-family: $secondary-font;
+    color: $dark-color;
+    text-align: center;
+}

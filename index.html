@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css?family=Fredoka+One|Varela+Round" rel="stylesheet">
     <link rel="stylesheet" href="./vendors/bootstrap-grid.min.css">
     <link rel="stylesheet" href="./assets/css/style.css">
-    <script src="https://kit.fontawesome.com/33ad03a185.js"></script>
+    
 </head>
 <body>
     <div class="hero-image">
@@ -16,7 +16,12 @@
     
             <!-- header -->
             <div class="row header__row px-c" id="navbar">
-                <div class="col-2">
+                <div class="menu col-2">
+                    <a href="#" class="menu__link brand">
+                        <span class="brand__link">
+                            dagerzuga
+                        </span>
+                    </a>
                 </div>
         
                 <div class="menu col-5">
@@ -40,7 +45,7 @@
                             Resume
                         </span>
                     </a>
-                    <a href="#" class="menu__link">
+                    <a href="/links.html" class="menu__link">
                         <span class="menu__link__text">
                             Blog
                         </span>
@@ -52,26 +57,18 @@
                     </a>
                 </div>
             </div>
+            
     
             <!-- content -->
             <div class="content px-c">
                 <div class="section__home" id="section__home">
 
-                    <h1 class="name">Dáger Zúñiga</h1>
+                    <h1 class="name">Dáger Zúñiga N.</h1>
+                    <h2 class="position">Full stack developer & content creator</h2>
 
-                    <!-- <h2 class="position">Full stack developer</h2> -->
-                    <div class="text-container">
-                            <p class="static-text">I'm Dáger Zúñiga,</p>
-                            <ul class="dynamic-text">
-                                  <li class="item">full stack developer</li>
-                                  <li class="item">mobile developer</li>
-                                  <li class="item">UX/UI desiger</li>
-                                  <li class="item">content creator</li>
-                                  <li class="item">professor</li>
-                            </ul>
-                    </div>
 
-                    <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione vitae facilis dicta cum, similique optio veniam saepe nemo suscipit. Ab.</p>
+                    <p class="description"> 
+                        I'm a person who loves to learn and share knowledge, currently working full time with Laravel from views to controllers. I'm a team player and a team lead.</p>
 
                     <ul class="social-networks">
                             <li class="social-network-list">
@@ -102,14 +99,34 @@
 
     <section class="content" id="content">
         <div class="section section__about px-c" id="section__about">
-            <h2>About</h2>
+            <h2 class="subtitle">About me</h2>
+            
+            <div class="row row-about">
+                <div class="col-5 about__photo">
+                    <img src="./assets/this.jpg" alt="" class="">
+                </div>
+
+
+                <div class="col-7">
+                    <p class="text">
+                            I'm Dáger Zúñiga Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to specimen book.
+                    </p>
+
+                    <p class="text">
+                            It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.
+                    </p>
+                </div>
+            </div>
         </div>
+
         <div class="section section__work px-c" id="section__work">
             <h2>Work</h2>
         </div>
+
         <div class="section section__resume px-c" id="section__resume">
             <h2>Resume</h2>
         </div>
+
         <div class="section section__contact px-c" id="section__contact">
             <h2>Contact</h2>
         </div>
@@ -117,5 +134,6 @@
 
     <script src="./vendors/jquery.min.js"></script>
     <script src="./assets/js/app.js"></script>
+    <script src="https://kit.fontawesome.com/33ad03a185.js"></script>
 </body>
 </html>

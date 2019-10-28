@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+
+img{
+    width: 100%;
+}
+
+.container-link{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    height: 100vh;
+    background: #FAFAFA;
+    padding-top: 15px;
+}
+
+*{
+    overflow: hidden; 
+}
+
+.link-name{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: 'Fredoka One', cursive;
+    color: #85A9C1;
+}
+
+.link-img{
+    width: 170px;
+    height: 100%;
+    border-radius: 50%;
+    border: solid 5px #85A9C1;
+}
+
+.row-link{
+    width: 220px;
+    border: solid #5C6A75 2px;
+    margin: 10px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 20px;
+    text-decoration: none;
+    font-family: 'Varela Round', sans-serif;
+    color: #5C6A75;
+    text-align: center;
+}
+
+.row-link:hover{
+    color: #F3F3F3;
+    background: #5C6A75;
+}

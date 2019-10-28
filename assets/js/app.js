@@ -1,6 +1,6 @@
 $('.menu__link').click(function() {
 	var getElem = $(this).attr('href');
-	var targetDistance = 20;
+	var targetDistance = 0;
 	if ($(getElem).length) {
 		var getOffset = $(getElem).offset().top;
 		$('html,body').animate({
