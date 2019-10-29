@@ -12,12 +12,11 @@
         width: 420px;
         height: 100%;
         z-index: 1;
-        // box-shadow: 0 0 85px 0 rgba(0, 0, 0, 0.14);
     }
 
     &:before{
         content: "";
-        background-color: #f2f2f2;
+        background-color: $gray-color;
         width: 420px;
         height: 420px;
         position: absolute;
@@ -27,9 +26,33 @@
     }
 }
 
+.col-about{
+    padding-left: 45px;
+    padding-right: 45px;
+    // background: #000;
+}
+
 .text{
     font-size: 20px;
     font-family: $secondary-font;
     margin-bottom: 20px;
     color: $dark-color;
+}
+
+.button-download{
+    display: inline-block;
+    border: solid $primary-color 2px;
+    margin-top: 25px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 16px;
+    text-decoration: none;
+    font-family: $secondary-font;
+    color: $primary-color;
+    text-align: center;
+    transition: .1s;
+    &:hover{
+        color: $white-color;
+        background: $primary-color;
+    }
 }

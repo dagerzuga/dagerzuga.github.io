@@ -1,0 +1,104 @@
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    padding: 25px 0 0 0;
+    max-width: 1200px;
+  }
+  
+  .cards_item {
+      display: flex;
+      .no-flexbox & { float: left; }
+      width: 100%;
+      justify-content: center;
+      margin-top: 0;
+      padding: 0 1em 2em;
+      // background: #000;
+  
+      // > 640px, 2 items/row
+      @media screen and (min-width: 42em) and ( max-width: 60em ) {
+          width: 50%;
+          .no-flexbox &:nth-child(2n+1) { clear: both; }
+      }
+  
+      // > 960px, 3 items/row
+      @media screen and (min-width: 60em) {
+              width: 33.3333%;
+              .no-flexbox &:nth-child(3n+1) { clear: both; }
+      }
+  }
+  
+  .card {
+      flex: 1 1 100%;
+      display: flex;
+      flex-direction: column;
+      background-color: $white-color;
+      border-radius: 5px;
+      box-shadow: 0px 7px 14px -2px rgba(163,163,163,1);
+  }
+  
+  .card_image {
+      img {
+          width: 100%;
+          border-top-left-radius: 5px;
+          border-top-right-radius: 5px;
+      }
+  }
+  
+  .card_content {
+      display: flex;
+      flex: 1 0 auto;
+      flex-direction: column;
+      margin-top: 0;
+      padding: 1.5em;
+      .card_heading{
+          font-family: $secondary-font;
+          color: $primary-color;
+        }
+        p{
+            color: $dark-color;
+            font-family: $secondary-font;
+            margin-top: 15px;
+            margin-bottom: 10px;
+            flex: 1 0 auto;
+      }
+  
+  }
+  
+  .card_button{
+      display: block;
+      text-align: center;
+    //   background: $primary-color;
+      border-radius: 5px;
+      padding: 10px;
+      color: $primary-color;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-size: 18px;
+      border: 2px solid $primary-color;
+      transition: all .2s ease-out;
+      font-family: $secondary-font;
+      &:hover{
+        background: $primary-color;
+          color: $white-color;
+      }
+  }
+  
+  .card_list{
+      margin-bottom: 10px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      span{
+          font-size: 44px;
+          width: 35px;
+      }
+      .fab{
+          font-size: 34px;
+      }
+      .icon__text{
+          font-size: 30px;
+      }
+  }
+  

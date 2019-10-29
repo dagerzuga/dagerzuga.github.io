@@ -3,9 +3,8 @@
     top: 0;
     margin: 0;
     width: 100%;
-    background: #fff;
-    // transition: .5s;
-    // border-bottom: solid $ternary-color 0.5px;
+    background: $white-color;
+    transition: 0;
     box-shadow: 0px 0px 18px 1px rgba(0, 0, 0, 0.1);
     z-index: 999;
     .menu .menu__link .menu__link__text{
@@ -13,13 +12,13 @@
     }
 
     .brand__link{
-        color: $ternary-color;
-        display: inline;
+        // color: $primary-color;
+        // display: inline;
     }
   }
 
 .header__row{
-    transition: background-color 1s;
+    transition: background-color .5s;
     padding-top: 2em;
     padding-bottom: 1em;
     align-content: center;
@@ -75,6 +74,6 @@
 }
 
 .brand__link{
-    color: #fff;
+    color: $white-color;
     display: none;
 }
