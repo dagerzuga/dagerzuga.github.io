@@ -1,8 +1,13 @@
+// img{
+//     wi
+// }
+
 .row-about{
     justify-content: space-between;
 }
 
 .about__photo{
+    padding: 0;
     overflow: hidden;
     position: relative;
     img{
@@ -29,7 +34,6 @@
 .col-about{
     padding-left: 45px;
     padding-right: 45px;
-    // background: #000;
 }
 
 .text{
@@ -55,4 +59,65 @@
         color: $white-color;
         background: $primary-color;
     }
+}
+
+
+
+
+@include change-on(990px){
+    .about__photo{
+        padding: 0;
+        text-align: center;
+        img{
+            padding-left: 0;
+            z-index: 0;
+        }
+    
+        &:before{
+            width: 0;
+            height: 0;
+        }
+    }
+
+    .col-about{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+@include change-on(large){
+    .col-about{
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+}
+
+@include change-on(medium){
+    .col-about{
+        padding: 0;
+        text-align: center;
+    }
+
+    .section{
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .text{
+        text-align: left;
+    }
+
+    
+    .subtitle{
+        text-align: center;
+        // margin-top: 35px;
+        // font-size: 2.4em;
+        // font-family: $secondary-font;
+        // color: $primary-color;
+        // margin-bottom: 45px;
+    }
+}
+
+@include change-on(small){
+
 }
