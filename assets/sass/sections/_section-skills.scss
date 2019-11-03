@@ -1,0 +1,44 @@
+.abilities-row{
+    display: flex;
+    justify-content: center;
+}
+.abilities__list{
+    display: flex;
+}
+
+.abilities__item{
+    font-family: $secondary-font;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 20px;
+}
+
+.abilities__icon{
+    color: $ternary-color;
+    font-size: 2.2em;
+}
+
+.abilities__text{
+    margin-top: 5px;
+    font-size: 1.4em;
+    color: $ternary-color;
+}
+
+.abilities-row--tech{
+    margin-bottom: 10px;
+}
+
+.abilities__list--tech{
+    display: flex;
+    flex-wrap: wrap!important;
+    justify-content: center;
+    max-width: 800px;
+    .abilities__icon{
+        font-size: 4em;
+    }
+}
+
+.icon-bigger{
+    font-size: 4.7em!important;
+}
