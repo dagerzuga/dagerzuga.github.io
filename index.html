@@ -14,9 +14,17 @@
     <div class="hero-image">
         <section class="header">
     
+            <div class="box">
+                <button class="hamburger" id="navbar-button">
+                    <span class="hamburger__line"></span>
+                    <span class="hamburger__line"></span>
+                    <span class="hamburger__line"></span>
+                </button>
+            </div>
+
             <!-- header -->
-            <div class="row header__row px-c" id="navbar">
-                <div class="menu col-2">
+            <div class="row header__row header__row--mobile px-c " id="navbar">
+                <div class="menu col-12 col-sm-2 col-lg-2 menu-brand">
                     <a href="#" class="menu__link brand">
                         <span class="brand__link">
                             dagerzuga
@@ -24,7 +32,7 @@
                     </a>
                 </div>
         
-                <div class="menu col-5">
+                <div class="menu col-12 col-sm-10 col-md-7 col-lg-5">
                     <a href="#section__home" class="menu__link">
                         <span class="menu__link__text menu__link__text--active">
                             Home
@@ -57,8 +65,7 @@
                     </a>
                 </div>
             </div>
-            
-    
+                
             <!-- content -->
             <div class="content px-c">
                 <div class="section__home" id="section__home">

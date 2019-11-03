@@ -10,6 +10,10 @@ $('.menu__link').click(function() {
 	return false;
 });
 
+const btnMenuNav = document.getElementById('navbar-button'),
+	  navBar = $("#navbar"),
+	  btnMenu = $(".menu__link")
+
 // When the user scrolls the page, execute myFunction
 window.onscroll = function() {myFunction()};
 
@@ -23,8 +27,20 @@ var sticky = section.offsetTop;
 function myFunction() {
 
   if (window.pageYOffset >= sticky) {
-    navbar.classList.add("sticky")
-  } else {
-    navbar.classList.remove("sticky");
+	navbar.classList.add("sticky")
+	btnMenuNav.classList.add("box--dark")
+} else {
+	navbar.classList.remove("sticky");
+	btnMenuNav.classList.remove("box--dark")
   }
 }
+
+btnMenuNav.onclick = function() {
+	btnMenuNav.classList.toggle("cross")
+	navBar.toggleClass("header__row--mobile--open")
+};
+
+$(btnMenu).on("click", () => {
+	btnMenuNav.classList.toggle("cross")
+	navBar.removeClass("header__row--mobile--open")
+})

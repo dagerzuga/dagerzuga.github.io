@@ -15,7 +15,6 @@
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-
 }
 
 .name{
@@ -68,4 +67,69 @@
 
 .social-network__icon{
     transition: all .2s;
+}
+
+
+@include change-on(large){
+    .section__home{
+        width: 100%;
+    }
+}
+
+@include change-on(580px){
+    .name{
+        font-size: 3em;
+    }
+
+    .position{
+        font-size: 2em;
+    }   
+    
+    .social-networks{
+        display: flex;
+        width: auto;
+        margin-top: 15px;
+        justify-content: space-between;
+    }
+}
+
+@include change-on(medium){
+    .px-c{
+        padding: 0 1.5em;
+    }
+
+    .section__home{
+        margin-top: 55px;
+    }
+
+    .name{
+        font-size: 2.5em;
+    }
+
+    .position{
+        font-size: 2em;
+    }   
+    
+    .social-networks{
+        display: flex;
+        width: auto;
+        margin-top: 15px;
+        justify-content: space-between;
+    }
+}
+
+@include change-on(small){
+    .section__home{
+        margin-top: 70px;
+    }
+
+    .name{
+        font-size: 2.8em;
+    }
+
+    .position{
+        font-size: 1.7em;
+        margin-top: 7px;
+        margin-bottom: 7px;
+    }   
 }
