@@ -136,10 +136,227 @@
             <h2 class="subtitle">Projects</h2>
             <p class="text">Here are some projects I've worked on, you can see different technologies and different roles in each one of them. Sometimes it's about flexibility and team working. For other projects you can check out my <a href="https://codepen.io/dagerzuga" target="_blank" class="inline-link">codepen</a> and <a href="https://github.com/dagerzuga" target="_blank" class="inline-link">github</a> profiles.</p>
 
-            <div class="card-container">
-                <ul class="cards">
+            <div class="categorias" id="categorias">
+                <a href="#" class="activo">All</a>
+                <a href="#">Web</a>
+                <a href="#">App</a>
+                <a href="#">Wordpress</a>
+                <a href="#">Others</a>
+            </div>
+
+            <section class="grid" id="grid">
+                <div class="item" data-categoria="app">
+                    <div class="item-contenido">
+                        <div class="card">
+                            <div class="card_image card_image_tasky">
+                                <img src="./assets/images/demo-tasky.png">
+                            </div>
+                            <div class="card_content">
+                                    <h2 class="card_heading">Tasky For Management</h2>
+                                    <h3 class="role">Role: Full stack developer</h3>
+                                    <p> To-Do web app where you can create an account, login, manage your tasks, 
+                                        change your personal info and select the theme of the app. All storage in firebase's realtime database.</p>
+                                    <ul class="card_list">
+                                        <span class="abilities__icon  fab fa-vuejs"></span>
+                                        <span class="abilities__icon  fab fa-bootstrap"></span>
+                                        <span class="abilities__icon  fab fa-sass"></span>
+                                    </ul>
+                                    <a href="https://dagerzuga.github.io/tasky/" target="_blank" class="card_button">Visit</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="item" data-categoria="web">
+                    <div class="item-contenido">
+                        <div class="card">
+                            <div class="card_image">
+                                <img src="./assets/images/demo-rachel.png">
+                            </div>
+                            <div class="card_content">
+                                    <h2 class="card_heading">Rachel's place (old)</h2>
+                                    <h3 class="role">Role: Front-end developer</h3>
+                                    <p>Portfolio site using modern features like lightbox effect on images, easing scroll on window and a handmade masonry layout.
+                                    </p>
+                                    <ul class="card_list">
+                                            <span class="abilities__icon fab fa-html5"></span>
+                                            <span class="abilities__icon fab fa-css3-alt"></span>
+                                            <span class="abilities__icon fab fa-js"></span>
+                                    </ul>
+                                    <a href="https://rachelmedrano.github.io/" target="_blank" class="card_button">Visit</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="item" data-categoria="web">
+                    <div class="item-contenido">
+                        <div class="card">
+                    
+                            <div class="card_image">
+                                <img src="./assets/images/demo-vacationswhere.png">
+                            </div>
+                
+                            <div class="card_content">
+                                    <h2 class="card_heading">Vacationswhere</h2>
+                                    <h3 class="role">Role: Front-end developer</h3>
+                                    <p>Vacations & travel website - only front - made using mobile first approach and modern css techniques such as flex-box and css grid.
+                                    </p>
+                                    <ul class="card_list">
+                                            <span class="abilities__icon fab fa-html5"></span>
+                                            <span class="abilities__icon fab fa-css3-alt"></span>
+                                            <span class="abilities__icon fab fa-js"></span>
+                                    </ul>
+                                    <div class="two-buttons">
+                                        <a href="https://www.dagerzuga.com/vacationswhere/" target="_blank" class="card_button">Visit</a>
+                                        <a href="https://github.com/dagerzuga/vacationswhere" target="_blank" class="card_button card_button--code">Code</a>
+                                    </div>
+                            </div>
+                
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="item" data-categoria="app">
+                    <div class="item-contenido">
+                        <div class="card">
+                            <div class="card_image">
+                                <img src="./assets/images/demo-journaler.png">
+                            </div>
+                            <div class="card_content">
+                                    <h2 class="card_heading">The Journaler</h2>
+                                    <h3 class="role">Role: Main java developer</h3>
+                                    <p> Collaborative project for college about a social media platform where users can create articles,
+                                        save them on bookmarks, comment, search, edit profile and more. This android app uses firebase for storage.</p>
+                                    <ul class="card_list">
+                                        <span class="abilities__icon fab fa-java"></span>
+                                        <span class="abilities__icon fab fa-git"></span>
+                                        <span class="abilities__icon fas fa-database icon--small"></span>
+                                    </ul>
+                                    <a href="https://github.com/dagerzuga/The-Journaler" target="_blank" class="card_button card_button--code">Code</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="item" data-categoria="wordpress">
+                    <div class="item-contenido">
+                        <div class="card">
+                            <div class="card_image">
+                                <img src="./assets/images/demo-mapache.png">
+                            </div>
+                            <div class="card_content">
+                                    <h2 class="card_heading">Mapache Docente</h2>
+                                    <h3 class="role">Role: SEO developer</h3>
+                                    <p> E-commerce site made using WooCommerce ranked up to the first page on a Google search, plus a 90% 
+                                        on gtmetrix.com page speed score.</p>
+                                    <ul class="card_list">
+                                        <span class="abilities__icon fab fa-wordpress"></span>
+                                        <span class="abilities__icon icon__text">+ Jetpack</span>
+                                        <span class="abilities__icon icon__text">+ Yoast</span>
+                                    </ul>
+                                    <div class="two-buttons">
+                                            <a href="http://mapachedocentecr.store/" target="_blank" class="card_button">Visit</a>
+                                            <a href="https://github.com/dagerzuga/mapachedocente" target="_blank" class="card_button card_button--code">Doc</a>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item" data-categoria="wordpress">
+                    <div class="item-contenido">
+                        <div class="card">
+                            <div class="card_image">
+                                <img src="./assets/images/demo-rachel-new.png">
+                            </div>
+                            <div class="card_content">
+                                    <h2 class="card_heading">Rachel's place (new)</h2>
+                                    <h3 class="role">Role: WordPress developer</h3>
+                                    <p> Portfolio website using WordPress as a platform to give the flexibility the user needs.
+                                        Sometimes is better to work from something than from scratch, this was the case.</p>
+                                    <ul class="card_list">
+                                        <span class="abilities__icon fab fa-wordpress"></span>
+                                        <span class="abilities__icon icon__text icon__text--small">+ WPBakery Page Builder</span>
+                                    </ul>
+                                    <a href="http://rachelms.com/" target="_blank" class="card_button">Visit</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="item" data-categoria="others">
+                    <div class="item-contenido">
+                        <div class="card">
+                            <div class="card_image">
+                                <img src="./assets/images/demo-front.png">
+                            </div>
+                            <div class="card_content">
+                                    <h2 class="card_heading">Front-End Checklist</h2>
+                                    <h3 class="role">Role: Translator</h3>
+                                    <p> Helping in the community is as important as writing code. This is my collaboration as Spanish translator on this popular project on Github about the performance as a front-end developer.</p>
+                                    <ul class="card_list">
+                                        <span class="abilities__icon fab fa-html5"></span>
+                                        <span class="abilities__icon fab fa-markdown icon--large"></span>
+                                        <span class="abilities__icon fab fa-git"></span>
+                                    </ul>
+                                    <a href="https://github.com/dagerzuga/Front-End-Performance-Checklist" target="_blank" class="card_button">visit</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- INCOMPLETO SIN ASIGNAR-->
+                <div class="item" data-categoria="app">
+                    <div class="item-contenido">
+                        <div class="card">
+                            <div class="card_image">
+                                <img src="./assets/images/demo-floppy.png">
+                            </div>
+                            <div class="card_content">
+                                    <h2 class="card_heading">Floppy Bord</h2>
+                                    <h3 class="role">Role: Javascript developer</h3>
+                                    <p> Open Source game using the popular framework phaser.js, you can pause the game and see the high scores, play it and get a random character every time.</p>
+                                    <ul class="card_list">
+                                        <span class="abilities__icon fab fa-html5"></span>
+                                        <span class="abilities__icon fab fa-js"></span>
+                                        <span class="abilities__icon fab fa-git"></span>
+                                    </ul>
+                                    <div class="two-buttons">
+                                        <a href="https://www.dagerzuga.com/floppybord/" target="_blank" class="card_button">Visit</a>
+                                        <a href="https://github.com/dagerzuga/floppybord" target="_blank" class="card_button card_button--code">Code</a>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item" data-categoria="wordpress">
+                    <div class="item-contenido">
+                        <div class="card">
+                            <div class="card_image">
+                                <img src="./assets/images/demo-thehypegeek.png">
+                            </div>
+                            <div class="card_content">
+                                    <h2 class="card_heading">The Hype Geek LATAM</h2>
+                                    <h3 class="role">Role: WordPress developer</h3>
+                                    <p> Blog about geek and pop topics, in this project the content creation and administration were essential. Working with a pre-existing theme is a useful way to accelerate the project, sometimes it is not necessary to start from zero.</p>
+                                    <ul class="card_list">
+                                        <span class="abilities__icon fab fa-wordpress"></span>
+                                        <span class="abilities__icon icon__text icon__text--small">+ WPBakery Page Builder</span>
+                                    </ul>
+                                    <a href="https://thehypegeek.com/" target="_blank" class="card_button">Visit</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+            <!-- <div class="card-container">
+                <ul class="cards"  id="grid"> -->
                     <!-- Tasky -->
-                    <li class="cards_item">
+                    <!-- <li class="cards_item">
                             <div class="card">
                                 <div class="card_image card_image_tasky">
                                     <img src="./assets/images/demo-tasky.png">
@@ -158,9 +375,9 @@
                                 </div>
                             </div>
                     </li>
-    
+     -->
                     <!-- Rachel's place -->
-                    <li class="cards_item">
+                    <!-- <li class="cards_item">
                         <div class="card">
                             <div class="card_image">
                                 <img src="./assets/images/demo-rachel.png">
@@ -179,9 +396,9 @@
                             </div>
                         </div>
                     </li>
-    
+     -->
                     <!-- Vacationswhere -->
-                    <li class="cards_item">
+                    <!-- <li class="cards_item">
                             <div class="card">
                     
                                 <div class="card_image">
@@ -206,9 +423,9 @@
                     
                             </div>
                     </li>
-    
+     -->
                     <!-- Journaler -->
-                    <li class="cards_item">
+                    <!-- <li class="cards_item">
                             <div class="card">
                                 <div class="card_image card_image_tasky">
                                     <img src="./assets/images/demo-journaler.png">
@@ -227,9 +444,9 @@
                                 </div>
                             </div>
                     </li>
-    
+     -->
                     <!-- Mapachedocente -->
-                    <li class="cards_item">
+                    <!-- <li class="cards_item">
                             <div class="card">
                                 <div class="card_image card_image_tasky">
                                     <img src="./assets/images/demo-mapache.png">
@@ -250,10 +467,10 @@
                                         </div>
                                 </div>
                             </div>
-                    </li>
+                    </li> -->
     
                     <!-- Front-end performer list -->
-                    <li class="cards_item">
+                    <!-- <li class="cards_item">
                             <div class="card">
                                 <div class="card_image card_image_tasky">
                                     <img src="./assets/images/demo-front.png">
@@ -270,9 +487,9 @@
                                         <a href="https://github.com/dagerzuga/Front-End-Performance-Checklist" target="_blank" class="card_button">visit</a>
                                 </div>
                             </div>
-                    </li>
-                </ul>
-            </div>
+                    </li> -->
+                <!-- </ul>
+            </div> -->
         </div>
 
         <div class="section section__resume px-c" id="section__resume">
@@ -419,6 +636,8 @@
         </div>
     </section>
 
+    <script src="https://unpkg.com/web-animations-js@2.3.2/web-animations.min.js"></script>
+    <script src="https://unpkg.com/muuri@0.8.0/dist/muuri.min.js"></script>
     <script src="./vendors/jquery.min.js"></script>
     <script src="./assets/js/app.js"></script>
     <script src="https://kit.fontawesome.com/33ad03a185.js"></script>
