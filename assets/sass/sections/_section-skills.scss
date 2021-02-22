@@ -8,7 +8,7 @@
 }
 
 .skill-list {
-  width: 75%;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -16,9 +16,26 @@
   &:last-child {
     margin-bottom: 0;
   }
+  @media (min-width: $screen-sm) {
+    // margin-bottom: 95px;
+    width: 75%;
+  }
+}
+
+.col-skill {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  @media (min-width: $screen-sm) {
+    margin-bottom: 10px;
+  }
 }
 
 .devicons {
-  font-size: 64px;
+  font-size: 44px;
   color: $color-blue;
+  @media (min-width: $screen-sm) {
+    font-size: 64px;
+  }
 }

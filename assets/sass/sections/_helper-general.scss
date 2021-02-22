@@ -3,19 +3,32 @@
     margin: 0;
 }
 
+body {
+
+}
+
 .main-container {
-    padding: 30px;
+    padding: 0;
     background: $color-blue;
     font-family: $font-segoe-regular;
     display: flex;
     justify-content: center;
+    width: 100%;
+    min-width: 100%;
+    @media (min-width: $screen-sm) {
+        padding: 30px;
+    }
 }
 
 .content-container {
     padding: 30px;
-    border-radius: 15px;
+    border-radius: 0;
     background: $color-white;
+    width: 100%;
     max-width: 1450px;
+    @media (min-width: $screen-sm) {
+        border-radius: 15px;
+    }
 }
 
 .section-content {
@@ -25,7 +38,7 @@
 }
 
 .section-content-title {
-    width: 80%;
+    width: 95%;
     margin-bottom: 50px;
     h2 {
         font-size: 26px;
@@ -39,6 +52,9 @@
             height: 2px;
             background: $color-blue;
         }
+    }
+    @media (min-width: $screen-sm) {
+        width: 80%;
     }
 }
 
