@@ -1,0 +1,35 @@
+.section-experience {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 80px;
+}
+
+.section-experience-row {
+  width: 85%;
+}
+
+.section-experience-column {
+  display: flex;
+  justify-content: center;
+}
+
+.experience-icon {
+  margin-right: 30px;
+}
+
+.experience-content {
+
+}
+
+.experience-title {
+  font-family: $font-segoe-bold;
+  color: $color-black;
+}
+
+.experience-name {
+  color: $color-gray
+}
+
+.experience-date {
+  color: $color-gray
+}

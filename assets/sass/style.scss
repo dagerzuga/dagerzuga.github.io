@@ -1,12 +1,11 @@
-@import 'helpers/variables';
-@import 'helpers/reset';
-@import 'helpers/responsive';
+@import 'sections/helper-variables';
+@import 'sections/helper-includes';
+@import 'sections/helper-general';
 
-@import 'sections/header';
-@import 'sections/section-main';
-@import 'sections/section-home';
-@import 'sections/section-about';
-@import 'sections/section-projects';
-@import 'sections/section-contact';
+@import 'sections/section-navigation';
+@import 'sections/section-introduction';
+@import 'sections/section-experience';
+@import 'sections/section-education';
 @import 'sections/section-skills';
-
+@import 'sections/section-blog';
+@import 'sections/section-footer';

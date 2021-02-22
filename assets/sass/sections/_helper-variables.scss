@@ -1,0 +1,41 @@
+$color-blue: #007AEA;
+$color-black: #333;
+$color-gray: #707070;
+$color-gray-light: #ABABAB;
+$color-white: #FAFAFA;
+$font-segoe-regular: 'Segoe UI Regular';
+$font-segoe-italic: 'Segoe UI Italic';
+$font-segoe-bold: 'Segoe UI Bold';
+$font-segoe-bold-italic: 'Segoe UI Bold Italic';
+
+
+@font-face {
+    font-family: 'Segoe UI Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: url('../fonts/segoe/Segoe-UI.woff');
+}
+
+@font-face {
+    font-family: 'Segoe UI Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: url('../fonts/segoe/Segoe-UI-Italic.woff');
+}
+
+@font-face {
+    font-family: 'Segoe UI Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Segoe UI Bold'), url('Segoe UI Bold.woff') format('woff');
+    src: url('../fonts/segoe/Segoe-UI-Bold.woff');
+}
+
+
+@font-face {
+    font-family: 'Segoe UI Bold Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Segoe UI Bold Italic'), url('Segoe UI Bold Italic.woff') format('woff');
+    src: url('../fonts/segoe/Segoe-UI-Bold-Italic.woff');
+}
