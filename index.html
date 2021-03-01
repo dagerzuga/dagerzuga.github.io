@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Dáger Zúñiga | Personal website</title>
-    <meta name="description" content="Personal web page of Dáger Zúñiga, developer and blogger">
+    <meta name="description" content="Personal web page of Dáger Zúñiga, developer">
     <link rel="stylesheet" href="./vendors/bootstrap-grid.min.css">
     <link rel="stylesheet" href="./assets/css/devicons.css">
     <link rel="stylesheet" href="./assets/css/style.css">
@@ -15,31 +15,33 @@
         <div class="content-container">
             <nav class="navigation">
                 <ul class="navigation-list">
-                    <li class="navigation-item navigation-item--active"><a href="#">About</a></li>
-                    <li class="navigation-item"><a href="#">Experience</a></li>
-                    <li class="navigation-item"><a href="#">Education</a></li>
-                    <li class="navigation-item"><a href="#">Skills</a></li>
-                    <li class="navigation-item"><a href="#">Blog</a></li>
+                    <li class="navigation-item navigation-item--active"><a href="#" class="btn-scroll-into" data-target="section-about">About</a></li>
+                    <li class="navigation-item"><a href="#" class="btn-scroll-into" data-target="section-experience">Experience</a></li>
+                    <li class="navigation-item"><a href="#" class="btn-scroll-into" data-target="section-education">Education</a></li>
+                    <li class="navigation-item"><a href="#" class="btn-scroll-into" data-target="section-skills">Skills</a></li>
+                    <li class="navigation-item"><a href="#" class="btn-scroll-into" data-target="section-blog">Blog</a></li>
                 </ul>
             </nav>
 
             <!-- Introduction -->
-            <section class="section-introduction">
+            <section class="section-introduction" id="section-about">
                 <div class="section-introduction-container row">
                     <div class="section-introduction-col-img col-12 col-lg-4">
                         <img src="./assets/images/dager.jpeg" alt="Dáger Zúñiga" width="250" height="250">
                     </div>
 
                     <div class="section-introduction-col-text col-12 col-lg-7">
-                        <p class="section-introduction-job">Front End Developer</p>
+                        <p class="section-introduction-job">Developer</p>
                         <h2 class="section-introduction-name">Dáger Zúñiga</h2>
-                        <p class="section-introduction-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet et laudantium quidem quos. Doloribus, ea nostrum similique cumque animi error eveniet explicabo ipsa aliquam omnis nihil veritatis!</p>
+                        <p class="section-introduction-description">Here you can see most of the relevant stuff related to my professional live. 
+                            It is also relevant to mention that I'm inlove of online education 
+                            because that allows us to follow the lead of the always growing tech industry.</p>
                     </div>
                 </div>
             </section>
 
             <!-- Experience -->
-            <section>
+            <section id="section-experience">
                 <div class="section-content">
                     <div class="section-content-title">
                         <h2>Experience</h2>
@@ -76,7 +78,7 @@
             </section>
 
             <!-- Education -->
-            <section>
+            <section id="section-education">
                 <div class="section-content">
                     <div class="section-content-title">
                         <h2>Education</h2>
@@ -113,7 +115,7 @@
             </section>
 
             <!-- Skills -->
-            <section>
+            <section id="section-skills">
                 <div class="section-content">
                     <div class="section-content-title">
                         <h2>Skills</h2>
@@ -140,18 +142,49 @@
             </section>
 
             <!-- Blog -->
-            <section>
+            <section id="section-blog" class="section-blog">
                 <div class="section-content">
                     <div class="section-content-title">
                         <h2>Blog</h2>
+                    </div>
+                </div>
+                <div class="section-container">
+                    <div id="articles-container" class="section-experience-row section-experience-row--education row article-container">
+                        <div class="article-list-container">
+                            <ul class="article-list">
+                                <li class="article-item"><a id="article-0" class="article-link" href=""  target="_blank" rel="noopener noreferrer"></a></li>
+                                <li class="article-item"><a id="article-1" class="article-link" href=""  target="_blank" rel="noopener noreferrer"></a></li>
+                                <li class="article-item"><a id="article-2" class="article-link" href=""  target="_blank" rel="noopener noreferrer"></a></li>
+                            </ul>
+                        </div>
+                        <div class="article-list-container">
+                            <ul class="article-list">
+                                <li class="article-item"><a id="article-3" class="article-link" href=""  target="_blank" rel="noopener noreferrer"></a></li>
+                                <li class="article-item"><a id="article-4" class="article-link" href=""  target="_blank" rel="noopener noreferrer"></a></li>
+                                <li class="article-item"><a id="article-5" class="article-link" href=""  target="_blank" rel="noopener noreferrer"></a></li>
+                            </ul>
+                        </div>
+                        <div class="article-list-container">
+                            <ul class="article-list">
+                                <li class="article-item"><a id="article-6" class="article-link" href=""  target="_blank" rel="noopener noreferrer"></a></li>
+                                <li class="article-item"><a id="article-7" class="article-link" href=""  target="_blank" rel="noopener noreferrer"></a></li>
+                                <li class="article-item"><a id="article-8" class="article-link" href=""  target="_blank" rel="noopener noreferrer"></a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
                 <!-- https://weeklydev.blog//wp-json/wp/v2/posts -->
                 <!-- https://developer.wordpress.org/rest-api/reference/posts/#list-posts -->
             </section>
 
-            <footer></footer>
         </div>
+        <footer class="section-footer">
+            <a class="social-media-link" href="https://www.linkedin.com/in/dagerzuga/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a class="social-media-link" href="https://github.com/dagerzuga" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a class="social-media-link" href="https://codepen.io/dagerzuga" target="_blank" rel="noopener noreferrer">CodePen</a>
+            <a class="social-media-link" href="https://weeklydev.blog/" target="_blank" rel="noopener noreferrer">Blog</a>
+        </footer>
     </div>
+    <script src="/assets/js/runner.js"></script>
 </body>
 </html>

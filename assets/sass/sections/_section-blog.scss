@@ -1,0 +1,31 @@
+.articles-container {
+  width: 75%;
+}
+
+.article-container {
+  flex-direction: column;
+  @media (min-width: $screen-sm) {
+    flex-direction: row;
+  }
+}
+
+.article-list-container {
+
+}
+
+.article-list {
+  // margin: 15px 0;
+  list-style: none;
+}
+
+.article-item {
+  margin: 20px 0;
+  width: 250px;
+}
+
+.article-link {
+  color: $color-gray;
+  &:hover {
+    color: $color-blue;
+  }
+}

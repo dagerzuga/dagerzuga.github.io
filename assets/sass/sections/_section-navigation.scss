@@ -1,16 +1,24 @@
 .navigation {
   margin-bottom: 60px;
   display: flex;
+  // flex-direction: row;
+  // justify-content: space-between;
   justify-content: center;
+  // background: olivedrab;
   @media (min-width: $screen-sm) {
     display: block;
+  }
 }
+
+.website-mode {
+  // background: orchid;
 }
 
 .navigation-list {
   display: flex;
   justify-content: flex-end;
   list-style: none;
+  // background: orange;
 }
 
 .navigation-item {
