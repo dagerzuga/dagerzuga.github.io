@@ -1,11 +1,10 @@
-@import 'sections/helper-variables';
-@import 'sections/helper-includes';
-@import 'sections/helper-general';
+@import 'helpers/_helper-variables';
+@import 'helpers/_helper-mixins';
+@import 'helpers/_helper-utilities';
 
+@import 'sections/section-general';
 @import 'sections/section-navigation';
 @import 'sections/section-introduction';
-@import 'sections/section-experience';
 @import 'sections/section-education';
 @import 'sections/section-skills';
-@import 'sections/section-blog';
 @import 'sections/section-footer';

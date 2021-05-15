@@ -1,43 +1,24 @@
-*, *::before, *::after {
+*,
+*::before,
+*::after {
     padding: 0;
     margin: 0;
 }
 
-body {
-
-}
-
 .main-container {
-    padding: 0;
     background: $color-blue;
     font-family: $font-segoe-regular;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    min-width: 100%;
-    @media (min-width: $screen-sm) {
-        padding: 30px;
-    }
 }
 
 .content-container {
     padding: 30px;
     border-radius: 0;
     background: $color-white;
-    width: 100%;
     max-width: 1450px;
-    @media (min-width: $screen-sm) {
+    @include on-screen-xs {
         border-top-left-radius: 15px;
         border-top-right-radius: 15px;
     }
-}
-
-.section-content {
-    display: flex;
-    justify-content: center;
-    width: 100%;
 }
 
 .section-content-title {
@@ -56,17 +37,16 @@ body {
             background: $color-blue;
         }
     }
-    @media (min-width: $screen-sm) {
+    @include on-screen-sm {
         width: 80%;
     }
 }
 
-.section-container {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 80px;
+.section-experience-column {
+    max-width: 500px;
 }
 
-.d-none {
-    display: none;
+.article-item {
+    margin: 20px 0;
+    width: 250px;
 }

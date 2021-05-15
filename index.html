@@ -4,71 +4,84 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Dáger Zúñiga | Personal website</title>
+    <title>Dáger Zúñiga - Developer</title>
     <meta name="description" content="Personal web page of Dáger Zúñiga, developer">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👨🏻‍💻</text></svg>">
     <link rel="stylesheet" href="vendors/bootstrap-grid.min.css">
     <link rel="stylesheet" href="assets/css/devicons.css">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    <div class="main-container">
-        <div class="content-container">
-            <nav class="navigation">
-                <ul class="navigation-list">
-                    <li class="navigation-item navigation-item--active"><a href="#" class="btn-scroll-into" data-target="section-about">About</a></li>
-                    <li class="navigation-item"><a href="#" class="btn-scroll-into" data-target="section-experience">Experience</a></li>
-                    <li class="navigation-item"><a href="#" class="btn-scroll-into" data-target="section-education">Education</a></li>
-                    <li class="navigation-item"><a href="#" class="btn-scroll-into" data-target="section-skills">Skills</a></li>
-                    <li class="navigation-item"><a href="#" class="btn-scroll-into" data-target="section-blog">Blog</a></li>
+    <div class="main-container d-flex flex-column justify-content-center align-items-center p-0 p-sm-5 w-100">
+        <div class="content-container w-100">
+            <nav class="navigation d-flex justify-content-center d-sm-block mb-5">
+                <ul class="d-flex justify-content-end list-style-none">
+                    <li class="navigation-item navigation-item--active">
+                        <a href="#" class="btn-scroll-into color-gray-light color-hover-gray text-decoration-none" data-target="section-about">About</a>
+                    </li>
+                    <li class="navigation-item">
+                        <a href="#" class="btn-scroll-into color-gray-light color-hover-gray text-decoration-none" data-target="section-experience">Experience</a>
+                    </li>
+                    <li class="navigation-item">
+                        <a href="#" class="btn-scroll-into color-gray-light color-hover-gray text-decoration-none" data-target="section-education">Education</a>
+                    </li>
+                    <li class="navigation-item">
+                        <a href="#" class="btn-scroll-into color-gray-light color-hover-gray text-decoration-none" data-target="section-skills">Skills</a>
+                    </li>
+                    <li class="navigation-item">
+                        <a href="#" class="btn-scroll-into color-gray-light color-hover-gray text-decoration-none" data-target="section-blog">Blog</a>
+                    </li>
                 </ul>
             </nav>
 
             <!-- Introduction -->
-            <section class="section-introduction" id="section-about">
-                <div class="section-introduction-container row">
-                    <div class="section-introduction-col-img col-12 col-lg-4">
-                        <img src="./assets/images/dager.jpeg" alt="Dáger Zúñiga" width="250" height="250">
+            <section class="d-flex justify-content-center" id="section-about">
+                <div class="section-introduction-container row w-100">
+                    <div class="section-introduction-col-img d-flex justify-content-center justify-content-lg-end col-lg-4">
+                        <img src="https://www.gravatar.com/avatar/57ef35bf4f457bd470905c9f7493387c?s=200" alt="Dáger Zúñiga" width="250" height="250">
                     </div>
-
-                    <div class="section-introduction-col-text col-12 col-lg-7">
-                        <p class="section-introduction-job">Developer</p>
-                        <h2 class="section-introduction-name">Dáger Zúñiga</h2>
-                        <p class="section-introduction-description">Here you can see most of the relevant stuff related to my professional life. It is also worth mentioning that I'm in love with online education because that allows us to keep up with the always-growing tech industry.</p>
+                    <div class="d-flex flex-column justify-content-center col-12 col-lg-7 pt-5">
+                        <p class="section-introduction-job color-gray">Developer</p>
+                        <h2 class="section-introduction-name font-bold mb-2">Dáger Zúñiga</h2>
+                        <p class="section-introduction-description color-gray mb-5">
+                            Hey! Here you can see most of the relevant aspects of my life 💻, but this is just a minimal approach,
+                            you can also check my other links - LinkedIn, GitHub & CodePen - and also my personal blog to see more information about me 🙂
+                        </p>
                     </div>
                 </div>
             </section>
 
             <!-- Experience -->
-            <section id="section-experience">
-                <div class="section-content">
+            <section id="section-experience" class="mb-5">
+                <div class="d-flex justify-content-center w-100">
                     <div class="section-content-title">
                         <h2>Experience</h2>
                     </div>
                 </div>
-                <div class="section-container">
-                    <div class="section-experience-row row">
-                        <div class="section-experience-column col-12 col-lg-4">
-                            <div class="experience-icon"><img src="./assets/icons/experience-full.svg" alt=""></div>
+                <div class="d-flex justify-content-center mb-5">
+                    <div class="row w-75">
+                        <div class="section-experience-column col-12 col-lg-4 d-flex justify-content-start justify-content-lg-center mb-5 mb-lg-0">
+                            <div class="mr-4"><img src="./assets/icons/experience-full.svg" alt=""></div>
                             <div class="experience-content">
-                                <p class="experience-title">Full Stack Developer</p>
-                                <p class="experience-name">Facturación Digital Costa Rica</p>
-                                <p class="experience-date">2019 - 2020</p>
+                                <p class="color-black font-bold">Full Stack Developer</p>
+                                <p class="color-gray">Facturación Digital Costa Rica</p>
+                                <p class="color-gray">2019 - 2020</p>
                             </div>
                         </div>
-                        <div class="section-experience-column col-12 col-lg-4">
-                            <div class="experience-icon"><img src="./assets/icons/experience-blog.svg" alt=""></div>
+                        <div class="section-experience-column col-12 col-lg-4 d-flex justify-content-start justify-content-lg-center mb-5 mb-lg-0">
+                            <div class="mr-4"><img src="./assets/icons/experience-blog.svg" alt=""></div>
                             <div class="experience-content">
-                                <p class="experience-title">Writter & Editor</p>
-                                <p class="experience-name">weeklydev</p>
-                                <p class="experience-date">2020 - Active</p>
+                                <p class="color-black font-bold">Writter & Editor</p>
+                                <p class="color-gray">weeklydev</p>
+                                <p class="color-gray">2020 - Active</p>
                             </div>
                         </div>
-                        <div class="section-experience-column col-12 col-lg-4">
-                            <div class="experience-icon"><img src="./assets/icons/experience-front.svg" alt=""></div>
+                        <div class="section-experience-column col-12 col-lg-4 d-flex justify-content-start justify-content-lg-center mb-5 mb-lg-0">
+                            <div class="mr-4"><img src="./assets/icons/experience-front.svg" alt=""></div>
                             <div class="experience-content">
-                                <p class="experience-title">Front End Developer</p>
-                                <p class="experience-name">The Lifetime Value Company</p>
-                                <p class="experience-date">2020 - Active</p>
+                                <p class="color-black font-bold">Front End Developer</p>
+                                <p class="color-gray">The Lifetime Value Company</p>
+                                <p class="color-gray">2020 - Active</p>
                             </div>
                         </div>
                     </div>
@@ -76,36 +89,36 @@
             </section>
 
             <!-- Education -->
-            <section id="section-education">
-                <div class="section-content">
+            <section id="section-education" class="mb-5">
+                <div class="d-flex justify-content-center w-100">
                     <div class="section-content-title">
                         <h2>Education</h2>
                     </div>
                 </div>
-                <div class="section-container">
-                    <div class="section-experience-row section-experience-row--education row">
-                        <div class="section-experience-column section-experience-column--education col-12 col-lg-3">
-                            <div class="experience-icon"><img src="./assets/icons/education-ucr.svg" alt=""></div>
+                <div class="d-flex justify-content-center">
+                    <div class="justify-content-evenly row w-75">
+                        <div class="section-experience-column section-experience-column--education col-12 col-lg-3 flex-column align-items-center mb-3 mb-lg-0">
+                            <div class="mb-2"><img src="./assets/icons/education-ucr.svg" alt=""></div>
                             <div class="experience-content">
-                                <p class="experience-title">Informática y Tecnología Multimedia</p>
-                                <p class="experience-name">Universidad de Costa Rica</p>
-                                <p class="experience-date">2016 - 2019</p>
+                                <p class="color-black font-bold">Informática y Tecnología Multimedia</p>
+                                <p class="color-gray">Universidad de Costa Rica</p>
+                                <p class="color-gray">2016 - 2019</p>
                             </div>
                         </div>
-                        <div class="section-experience-column section-experience-column--education col-12 col-lg-3">
-                            <div class="experience-icon"><img src="./assets/icons/education-scrum.svg" alt=""></div>
+                        <div class="section-experience-column section-experience-column--education col-12 col-lg-3 flex-column align-items-center mb-3 mb-lg-0">
+                            <div class="mb-2"><img src="./assets/icons/education-scrum.svg" alt=""></div>
                             <div class="experience-content">
-                                <p class="experience-title">Scrum Master</p>
-                                <p class="experience-name">International Scrum Institute</p>
-                                <p class="experience-date">2018</p>
+                                <p class="color-black font-bold">Scrum Master</p>
+                                <p class="color-gray">International Scrum Institute</p>
+                                <p class="color-gray">2018</p>
                             </div>
                         </div>
-                        <div class="section-experience-column section-experience-column--education col-12 col-lg-3">
-                            <div class="experience-icon"><img src="./assets/icons/education-clean.svg" alt=""></div>
+                        <div class="section-experience-column section-experience-column--education col-12 col-lg-3 flex-column align-items-center mb-0">
+                            <div class="mb-2"><img src="./assets/icons/education-clean.svg" alt=""></div>
                             <div class="experience-content">
-                                <p class="experience-title">Clean Code</p>
-                                <p class="experience-name">Openwebinars</p>
-                                <p class="experience-date">2018</p>
+                                <p class="color-black font-bold">Clean Code</p>
+                                <p class="color-gray">Openwebinars</p>
+                                <p class="color-gray">2018</p>
                             </div>
                         </div>
                     </div>
@@ -113,72 +126,76 @@
             </section>
 
             <!-- Skills -->
-            <section id="section-skills">
-                <div class="section-content">
+            <section id="section-skills" class="mb-5">
+                <div class="d-flex justify-content-center w-100">
                     <div class="section-content-title">
                         <h2>Skills</h2>
                     </div>
                 </div>
-                <div class="section-container">
-                    <div class="section-skills-row">
-                        <div class="skill-list row">
-                            <div class="col-skill col-3 col-md-2"><span class="devicons devicons-html5"></span></div>
-                            <div class="col-skill col-3 col-md-2"><span class="devicons devicons-css3"></span></div>
-                            <div class="col-skill col-3 col-md-2"><span class="devicons devicons-javascript"></span></div>
-                            <div class="col-skill col-3 col-md-2"><span class="devicons devicons-sass"></span></div>
-                            <div class="col-skill col-3 col-md-2"><span class="devicons devicons-react"></span></div>
-                            <div class="col-skill col-3 col-md-2"><span class="devicons devicons-bootstrap"></span></div>
-                            <div class="col-skill col-3 col-md-2"><span class="devicons devicons devicons-git"></span></div>
-                            <div class="col-skill col-3 col-md-2"><span class="devicons devicons-gulp"></span></div>
-                            <div class="col-skill col-3 col-md-2"><span class="devicons devicons-php"></span></div>
-                            <div class="col-skill col-3 col-md-2"><span class="devicons devicons-laravel"></span></div>
-                            <div class="col-skill col-3 col-md-2"><span class="devicons devicons-mysql"></span></div>
-                            <div class="col-skill col-3 col-md-2"><span class="devicons devicons-wordpress"></span></div>
+                <div class="d-flex justify-content-center">
+                    <div class="d-flex flex-column align-items-center justify-content-center w-95">
+                        <div class="skill-list row d-flex justify-content-between align-items-center">
+                            <div class="d-flex justify-content-center align-items-center mb-4 mb-md-5 col-3 col-md-2"><span class="devicons devicons-html5"></span></div>
+                            <div class="d-flex justify-content-center align-items-center mb-4 mb-md-5 col-3 col-md-2"><span class="devicons devicons-css3"></span></div>
+                            <div class="d-flex justify-content-center align-items-center mb-4 mb-md-5 col-3 col-md-2"><span class="devicons devicons-javascript"></span></div>
+                            <div class="d-flex justify-content-center align-items-center mb-4 mb-md-5 col-3 col-md-2"><span class="devicons devicons-sass"></span></div>
+                            <div class="d-flex justify-content-center align-items-center mb-4 mb-md-5 col-3 col-md-2"><span class="devicons devicons-react"></span></div>
+                            <div class="d-flex justify-content-center align-items-center mb-4 mb-md-5 col-3 col-md-2"><span class="devicons devicons-bootstrap"></span></div>
+                            <div class="d-flex justify-content-center align-items-center mb-4 mb-md-5 col-3 col-md-2"><span class="devicons devicons devicons-git"></span></div>
+                            <div class="d-flex justify-content-center align-items-center mb-4 mb-md-5 col-3 col-md-2"><span class="devicons devicons-gulp"></span></div>
+                            <div class="d-flex justify-content-center align-items-center mb-4 mb-md-5 col-3 col-md-2"><span class="devicons devicons-php"></span></div>
+                            <div class="d-flex justify-content-center align-items-center mb-4 mb-md-5 col-3 col-md-2"><span class="devicons devicons-laravel"></span></div>
+                            <div class="d-flex justify-content-center align-items-center mb-4 mb-md-5 col-3 col-md-2"><span class="devicons devicons-mysql"></span></div>
+                            <div class="d-flex justify-content-center align-items-center mb-4 mb-md-5 col-3 col-md-2"><span class="devicons devicons-wordpress"></span></div>
                         </div>
                     </div>
                 </div>
             </section>
 
             <!-- Blog -->
-            <section id="section-blog" class="section-blog">
-                <div class="section-content">
+            <section id="section-blog" class="mb-5">
+                <div class="d-flex justify-content-center w-100">
                     <div class="section-content-title">
                         <h2>Blog</h2>
                     </div>
                 </div>
-                <div class="section-container">
-                    <div id="articles-container" class="section-experience-row section-experience-row--education row article-container">
+                <div class="d-flex justify-content-center mb-5">
+                    <div id="articles-container" class="justify-content-evenly row flex-column flex-sm-row w-75">
                         <div class="article-list-container">
-                            <ul class="article-list">
-                                <li class="article-item"><a id="article-0" class="article-link" href=""  target="_blank" rel="noopener noreferrer"></a></li>
-                                <li class="article-item"><a id="article-1" class="article-link" href=""  target="_blank" rel="noopener noreferrer"></a></li>
-                                <li class="article-item"><a id="article-2" class="article-link" href=""  target="_blank" rel="noopener noreferrer"></a></li>
+                            <ul class="list-style-none">
+                                <li class="article-item"><a id="article-0" class="color-gray color-hover-blue" href=""  target="_blank" rel="noopener noreferrer"></a></li>
+                                <li class="article-item"><a id="article-1" class="color-gray color-hover-blue" href=""  target="_blank" rel="noopener noreferrer"></a></li>
+                                <li class="article-item"><a id="article-2" class="color-gray color-hover-blue" href=""  target="_blank" rel="noopener noreferrer"></a></li>
                             </ul>
                         </div>
                         <div class="article-list-container">
-                            <ul class="article-list">
-                                <li class="article-item"><a id="article-3" class="article-link" href=""  target="_blank" rel="noopener noreferrer"></a></li>
-                                <li class="article-item"><a id="article-4" class="article-link" href=""  target="_blank" rel="noopener noreferrer"></a></li>
-                                <li class="article-item"><a id="article-5" class="article-link" href=""  target="_blank" rel="noopener noreferrer"></a></li>
+                            <ul class="list-style-none">
+                                <li class="article-item"><a id="article-3" class="color-gray color-hover-blue" href=""  target="_blank" rel="noopener noreferrer"></a></li>
+                                <li class="article-item"><a id="article-4" class="color-gray color-hover-blue" href=""  target="_blank" rel="noopener noreferrer"></a></li>
+                                <li class="article-item"><a id="article-5" class="color-gray color-hover-blue" href=""  target="_blank" rel="noopener noreferrer"></a></li>
                             </ul>
                         </div>
                         <div class="article-list-container">
-                            <ul class="article-list">
-                                <li class="article-item"><a id="article-6" class="article-link" href=""  target="_blank" rel="noopener noreferrer"></a></li>
-                                <li class="article-item"><a id="article-7" class="article-link" href=""  target="_blank" rel="noopener noreferrer"></a></li>
-                                <li class="article-item"><a id="article-8" class="article-link" href=""  target="_blank" rel="noopener noreferrer"></a></li>
+                            <ul class="list-style-none">
+                                <li class="article-item"><a id="article-6" class="color-gray color-hover-blue" href=""  target="_blank" rel="noopener noreferrer"></a></li>
+                                <li class="article-item"><a id="article-7" class="color-gray color-hover-blue" href=""  target="_blank" rel="noopener noreferrer"></a></li>
+                                <li class="article-item"><a id="article-8" class="color-gray color-hover-blue" href=""  target="_blank" rel="noopener noreferrer"></a></li>
                             </ul>
                         </div>
                     </div>
                 </div>
             </section>
-
         </div>
-        <footer class="section-footer">
-            <a class="social-media-link" href="https://www.linkedin.com/in/dagerzuga/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-            <a class="social-media-link" href="https://github.com/dagerzuga" target="_blank" rel="noopener noreferrer">GitHub</a>
-            <a class="social-media-link" href="https://codepen.io/dagerzuga" target="_blank" rel="noopener noreferrer">CodePen</a>
-            <a class="social-media-link" href="https://weeklydev.blog/" target="_blank" rel="noopener noreferrer">Blog</a>
+        <footer class="w-100">
+            <div class="section-footer d-flex justify-content-center d-md-block">
+                <a class="color-gray-light text-decoration-none color-hover-black ml-3 mr-3 ml-sm-0" href="https://www.linkedin.com/in/dagerzuga/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                <a class="color-gray-light text-decoration-none color-hover-black ml-3 mr-3 ml-sm-0" href="https://github.com/dagerzuga" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a class="color-gray-light text-decoration-none color-hover-black ml-3 mr-3 ml-sm-0" href="https://codepen.io/dagerzuga" target="_blank" rel="noopener noreferrer">CodePen</a>
+                <a class="color-gray-light text-decoration-none color-hover-black ml-3 mr-3 ml-sm-0" href="https://weeklydev.blog/" target="_blank" rel="noopener noreferrer">Blog</a>
+            </div>
+            <div class="d-flex justify-content-center color-white mt-3 mb-4 mt-md-5">
+                <p>Made with ❤️ & 💪🏻 by me 👨🏻‍💻</p>
+            </div>
         </footer>
     </div>
     <script src="runner.js"></script>

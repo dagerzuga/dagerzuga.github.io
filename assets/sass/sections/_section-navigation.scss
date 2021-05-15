@@ -1,41 +1,15 @@
-.navigation {
-  margin-bottom: 60px;
-  display: flex;
-  // flex-direction: row;
-  // justify-content: space-between;
-  justify-content: center;
-  // background: olivedrab;
-  @media (min-width: $screen-sm) {
-    display: block;
-  }
-}
-
-.website-mode {
-  // background: orchid;
-}
-
-.navigation-list {
-  display: flex;
-  justify-content: flex-end;
-  list-style: none;
-  // background: orange;
-}
-
 .navigation-item {
   margin: 0 10px;
   a {
-    text-decoration: none;
-    color: $color-gray-light;
     &:hover {
-      color: $color-gray;
       border-bottom: 1px solid $color-gray;
     }
   }
 }
 
 .navigation-item--active {
+  border-bottom: 1px solid $color-gray;
   a {
     color: $color-gray;
   }
-  border-bottom: 1px solid $color-gray;
 }

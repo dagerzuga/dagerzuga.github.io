@@ -1,41 +1,8 @@
-.section-skills-row {
-  width: 95%;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
-  // background: orange;
-}
-
 .skill-list {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 50px;
-  &:last-child {
-    margin-bottom: 0;
-  }
-  @media (min-width: $screen-sm) {
-    // margin-bottom: 95px;
-    width: 75%;
-  }
-}
-
-.col-skill {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 30px;
-  @media (min-width: $screen-sm) {
-    margin-bottom: 10px;
-  }
+  @include addResponsiveProperty(width, 100%, $small: 75%);
 }
 
 .devicons {
-  font-size: 44px;
+  @include addResponsiveProperty(font-size, 44px, $small:64px);
   color: $color-blue;
-  @media (min-width: $screen-sm) {
-    font-size: 64px;
-  }
 }

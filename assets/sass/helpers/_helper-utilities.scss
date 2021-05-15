@@ -1,0 +1,67 @@
+// ---- Display ---- //
+.justify-content-evenly {
+ justify-content: space-evenly;
+}
+
+.w-100 {
+ width: 100%;
+}
+
+.w-95 {
+ width: 95%;
+}
+
+.w-75 {
+ width: 75%;
+}
+
+
+// ---- Fonts ---- //
+.font-bold {
+ font-family: $font-segoe-bold;
+}
+
+.color-white {
+ color: $color-white
+}
+
+.color-gray {
+ color: $color-gray;
+}
+
+.color-hover-gray {
+ &:hover {
+  color: $color-gray;
+ }
+}
+
+.color-gray-light {
+ color: $color-gray-light;
+}
+
+.color-black {
+ color: $color-black;
+}
+
+.color-hover-black {
+ &:hover {
+  color: $color-black;
+ }
+}
+
+.color-hover-blue {
+ &:hover {
+  color: $color-blue;
+ }
+}
+
+
+// ---- List ---- //
+.list-style-none {
+ list-style: none;
+}
+
+.text-decoration-none {
+ text-decoration: none;
+}
+

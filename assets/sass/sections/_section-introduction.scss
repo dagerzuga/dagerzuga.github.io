@@ -1,19 +1,8 @@
-.section-introduction {
-  display: flex;
-  justify-content: center;
-}
-
 .section-introduction-container {
-  width: 100%;
-  margin-bottom: 30px;
-  @media (min-width: $screen-md) {
-    margin-bottom: 95px;
-  }
+  @include addResponsiveProperty(margin-bottom, 30px, $medium: 95px);
 }
 
 .section-introduction-col-img {
-  display: flex;
-  justify-content: center;
   margin-right: 20px;
   img {
     width: 250px;
@@ -23,37 +12,21 @@
     border-radius: 50%;
     margin-bottom: 30px;
   }
-  @media (min-width: $screen-lg) {
-    justify-content: flex-end;
-  }
-  @media (min-width: $screen-md) {
+  @include on-screen-md {
     img {
       margin-bottom: 0;
     }
   }
 }
 
-
-.section-introduction-col-text {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding-top: 20px;
-}
-
 .section-introduction-job {
   font-size: 18px;
-  color: $color-gray;
 }
 
 .section-introduction-name {
   font-size: 40px;
-  font-family: $font-segoe-bold;
-  margin-bottom: 10px;
-  color: $color-black;
 }
+
 .section-introduction-description {
   font-size: 20px;
-  margin-bottom: 25px;
-  color: $color-gray;
 }

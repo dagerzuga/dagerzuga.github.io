@@ -3,24 +3,8 @@
   max-width: 1450px;
   background: $color-white-dark;
   padding: 10px 40px;
-  display: flex;
-  justify-content: center;
-  @media (min-width: $screen-sm) {
-    display: block;
+  @include on-screen-sm {
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
-  }
-}
-
-.social-media-link {
-  text-decoration: none;
-  color: $color-gray-light;
-  margin-left: 20px;
-  margin-right: 20px;
-  &:hover {
-    color: $color-black;
-  }
-  @media (min-width: $screen-sm) {
-    margin-left: 0;
   }
 }

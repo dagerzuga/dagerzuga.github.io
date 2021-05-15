@@ -1,0 +1,53 @@
+@mixin on-screen-xs {
+  @media (min-width: $screen-xs) {
+    @content;
+  }
+}
+
+@mixin on-screen-sm {
+  @media (min-width: $screen-sm) {
+    @content;
+  }
+}
+
+@mixin on-screen-md {
+  @media (min-width: $screen-md) {
+    @content;
+  }
+}
+
+@mixin on-screen-lg {
+  @media (min-width: $screen-lg) {
+    @content;
+  }
+}
+
+@mixin on-screen-xl {
+  @media (min-width: $screen-xl) {
+    @content;
+  }
+}
+
+@mixin addResponsiveProperty($property, $default-value, $extra-small: null, $small: null, $medium: null, $large: null, $extra-large: null) {
+  #{$property}: $default-value;
+
+  @include on-screen-xs {
+    #{$property}: $extra-small;
+  }
+
+  @include on-screen-sm {
+    #{$property}: $small;
+  }
+
+  @include on-screen-md {
+    #{$property}: $medium;
+  }
+
+  @include on-screen-lg {
+    #{$property}: $large;
+  }
+
+  @include on-screen-xl {
+    #{$property}: $extra-large;
+  }
+}
