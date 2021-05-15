@@ -1,4 +1,8 @@
 // ---- Display ---- //
+.d-none {
+ display: none!important;
+}
+
 .justify-content-evenly {
  justify-content: space-evenly;
 }
