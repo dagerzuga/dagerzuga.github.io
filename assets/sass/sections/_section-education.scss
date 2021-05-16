@@ -8,3 +8,31 @@
     margin-bottom: 10px;
   }
 }
+
+.container-education {
+  position: relative;
+  overflow: hidden;
+}
+
+.education-row {
+  position: absolute;
+  transform: translateX(100%);
+  transition: .5s;
+  &--active {
+    transform: translateX(0);
+  }
+}
+
+.education-indicator {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border: solid .5px $color-gray-light;
+  border-radius: 50%;
+  margin: 0 10px;
+  cursor: pointer;
+  transition: .2s;
+  &--active {
+    background-color: $color-gray-light;
+  }
+}

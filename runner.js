@@ -2,7 +2,7 @@
 
   function initExperienceButtons() {
     let anchors = document.getElementsByClassName('js-experience-button');
-    for(let i = 0; i < anchors.length; i++) {
+    for (let i = 0; i < anchors.length; i++) {
         let element = anchors[i];
         element.onclick = function() {
           let containerIndex = element.getAttribute('data-experience');
@@ -41,7 +41,41 @@
     }
   }
 
-  window.onresize = updateContainerHeight;
+  // -----
+
+  function removeActiveBullet() {
+    document.querySelector('.education-indicator--active').classList.remove('education-indicator--active')
+  }
+
+  function removeActiveRow() {
+    document.querySelector('.education-row--active').classList.remove('education-row--active')
+  }
+
+  function addActiveRow(button) {
+    button.classList.add('education-indicator--active');
+    let rowSelected = button.getAttribute('data-education-indicator');
+    document.querySelector(`#education-row-${rowSelected}`).classList.add('education-row--active');
+  }
+
+  function initEducationButtons() {
+    let elements = document.getElementsByClassName('js-education-button');
+    for (let i = 0; i < elements.length; i++) {
+      let button = elements[i];
+      button.onclick = function() {
+        removeActiveBullet();
+        removeActiveRow();
+        addActiveRow(button);
+        setEducationContainerHeight();
+      };
+    }
+  }
+
+  function setEducationContainerHeight() {
+    let containerSelected = document.querySelector('.education-row--active');
+    let height = containerSelected.offsetHeight;
+    let container = document.querySelector('.js-container-education');
+    container.style.height = `${height}px`;
+  }
 
   // -----
 
@@ -82,5 +116,13 @@
 
   initScrollMenu();
   initExperienceButtons();
+  initEducationButtons();
+  setEducationContainerHeight();
   showPosts();
+
+  window.onresize = function() {
+    updateContainerHeight()
+    setEducationContainerHeight();
+  };
+
 })();
