@@ -5,6 +5,10 @@
     margin: 0;
 }
 
+body {
+    background: $color-blue;
+}
+
 .main-container {
     background: $color-blue;
     font-family: $font-segoe-regular;
@@ -46,12 +50,28 @@
     max-width: 500px;
 }
 
+.experience-inner-content {
+    border-left: solid 1px transparent;
+    padding-left: 15px;
+
+    @include on-screen-md {
+        border-left: none;
+        padding-left: 0;
+        padding-bottom: 15px;
+        border-bottom: solid 1px transparent;
+    }
+}
+
 .experience-button {
-    border-bottom: solid 1px transparent;
-    padding-bottom: 15px;
     &:hover {
         cursor: pointer;
-        border-bottom: solid 1px $color-black;
+        .experience-inner-content {
+            border-left: solid 1px $color-gray;
+            @include on-screen-md {
+                border-left: none;
+                border-bottom: solid 1px $color-gray;
+            }
+        }
     }
 }
 

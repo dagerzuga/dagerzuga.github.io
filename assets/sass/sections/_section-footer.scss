@@ -3,7 +3,7 @@
   max-width: 1450px;
   background: $color-white-dark;
   padding: 10px 40px;
-  @include on-screen-sm {
+  @include on-screen-xs {
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
   }

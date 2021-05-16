@@ -1,5 +1,4 @@
 (function () {
-
   function initExperienceButtons() {
     let anchors = document.getElementsByClassName('js-experience-button');
     for (let i = 0; i < anchors.length; i++) {
@@ -77,6 +76,13 @@
     container.style.height = `${height}px`;
   }
 
+  function initEducationCarousel() {
+    setInterval(() => {
+      var nonSelectedBullet = document.querySelector('.education-indicator--active').previousElementSibling || document.querySelector('.education-indicator--active').nextElementSibling;
+          nonSelectedBullet.click();
+    }, 15000);
+  }
+
   // -----
 
   function initScrollMenu() {
@@ -117,8 +123,12 @@
   initScrollMenu();
   initExperienceButtons();
   initEducationButtons();
-  setEducationContainerHeight();
+  initEducationCarousel();
   showPosts();
+
+  setTimeout(() => {
+    setEducationContainerHeight();
+  }, 300);
 
   window.onresize = function() {
     updateContainerHeight()

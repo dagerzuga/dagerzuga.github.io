@@ -3,6 +3,6 @@
 }
 
 .devicons {
-  @include addResponsiveProperty(font-size, 44px, $small:64px);
+  @include addResponsiveProperty(font-size, 50px, $extra-small: 60px, $small: 64px);
   color: $color-blue;
 }
